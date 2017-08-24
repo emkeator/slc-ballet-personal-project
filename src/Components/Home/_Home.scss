@@ -1,0 +1,54 @@
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    width:150px;
+}
+
+.behindLogo{
+    width: 150px;
+    position: absolute;
+    top: calc(100vh - 150px);
+    left: 0;
+    height: calc(150px - 10px);
+    background-color: $white-opaque;
+    display: block;
+}
+
+
+@media (min-width: 450px) {
+
+    .behindLogo {
+        top: 0px;
+        left: 0px;
+        background-color: none;
+    }
+}
+
+@media (min-width:450px) and (min-height: 500px) {
+
+    .behindLogo {
+        background-color: none;
+        top: calc(50vh - 75px);
+        left: calc(50vw - 75px);
+    }
+    
+}
+
+@media (min-width: 750px) {
+    .logo {
+        width: 300px;
+    }
+
+    .behindLogo {
+        width: 300px;
+        background-color: none;
+        top: calc(50vh - 150px);
+        left: calc(33vw - 150px);
+    }
+    
+}

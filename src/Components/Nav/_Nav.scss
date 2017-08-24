@@ -1,0 +1,79 @@
+@import './../../sass/variables';
+@import './../../sass/mixins';
+
+@keyframes rotateTitle {
+    100% {transform: rotate(45deg)}
+}
+
+.navMenu {
+    color: white;
+
+    div {
+        position: fixed;
+        top: -300px;
+        right: -300px;
+        top: -600px;
+        right: -600px;
+    }
+    ul {
+        background-color: $black-opaque;
+
+        width: 600px;
+        height: 600px;
+        position: relative;
+        
+        border-radius: 50%; 
+    }
+    
+}
+
+.menuToggle {
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 300%;
+    
+    &:hover {
+        color: $sunset;
+    }
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $black;
+    transform: rotate(45deg);
+    color: $white;
+}
+
+.navItem {
+    
+    position: absolute;
+    letter-spacing: 0.5em;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    
+    font: {
+        family: $sansFont;
+        
+    }
+
+    @include menu-items-placement(300px)
+}
+
+.navLink {
+    color: $white !important;
+    &:hover {
+        color: $sunset !important;
+    }
+    text: {
+        decoration: none !important;
+        transform: uppercase !important;
+    }
+}

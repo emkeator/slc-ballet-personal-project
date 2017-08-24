@@ -1,0 +1,52 @@
+
+@mixin menu-items-placement($menuWidth) {
+    &:nth-child(1){
+        bottom: calc(25px + (5* 20px) + (5* 25px));
+        left: calc(20px + (0* 20px) + (0* 15px));
+    }
+    &:nth-child(2){
+        bottom: calc(25px + (4* 20px) + (4* 25px));
+        left: calc(20px + (1* 20px) + (1* 15px) - 23px);
+    }
+    &:nth-child(3){
+        bottom: calc(25px + (3* 20px) + (3* 25px));
+        left: calc(20px + (2* 20px) + (2* 15px) - 37px);
+    }
+    &:nth-child(4){
+        bottom: calc(25px + (2* 20px) + (2* 25px));
+        left: calc(20px + (3* 20px) + (3* 15px) - 40px);
+    }
+    &:nth-child(5){
+        // bottom: calc(20px + 20px + ($menuWidth - 40px - 80px) / 5);
+        bottom: calc(25px + (1* 20px) + (1* 25px));
+        left: calc(20px + (4* 20px) + (4* 15px) - 34px);
+    }
+    &:nth-child(6){
+        bottom: calc(25px + (0* 20px) + (0* 25px));
+        left: calc(20px + (5* 20px) + (5* 15px) + 5px);
+    }
+}
+
+@mixin landing-page-bg-image() {
+    .landing {
+        background-image: url('./images/landingBGMobile.jpeg');
+    }
+
+    @media (min-width: 450px) {
+        .landing {
+            background-image: url('./images/landingBGMidSize.jpeg');
+        }
+    }
+
+    @media(min-width: 1000px) and (max-height:800px) {
+        .landing {
+            background-image: url('./images/landingBGFullscreen.jpeg');
+        }
+    }
+
+    @media (min-width:1200px) {
+        .landing {
+            background-image: url('./images/landingBGFullscreen.jpeg');
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './sass/reset';
+
+// ======= Variables ======= //
+@import './sass/variables';
+
+// ======= Mixins ======= //
+@import './sass/mixins';
+
+// ======= Components ======= //
+@import './Components/Nav/Nav';
+@import './Components/Home/Home';
+@import './Components/About/About';
+
+
+@include landing-page-bg-image();

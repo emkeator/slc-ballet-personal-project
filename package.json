@@ -1,0 +1,44 @@
+{
+  "name": "ballet",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.4",
+    "express-sessions": "^1.0.6",
+    "jquery": "^3.2.1",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.0.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11",
+    "redux": "^3.7.2",
+    "redux-promise-middleware": "^4.3.0"
+  },
+  "scripts": {
+    "start-js": "PORT=3001 react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+  },
+  "description": "Salt Lake City Ballet",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emkeator/slc-ballet-personal-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emkeator/slc-ballet-personal-project/issues"
+  },
+  "homepage": "https://github.com/emkeator/slc-ballet-personal-project#readme"
+}

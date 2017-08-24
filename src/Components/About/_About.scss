@@ -1,0 +1,100 @@
+@import './../../sass/mixins';
+@import './../../sass/variables';
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: $evening;
+    p {
+        position: absolute;
+        top: 175px;
+        right: 10vw;
+        width: 600px;
+        height: 300px;
+        padding: 75px 50px;
+        background-color: $stormy-opaque;
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 110%;
+        }
+        text-align: center;
+        letter-spacing: 0.2em;
+        overflow: scroll;
+    }
+
+}
+
+.headerContainer {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    // border: 1px solid red;
+
+    text: {
+        transform: uppercase;
+    }
+    font: {
+        family: $serifFont;
+        size: 4rem;
+    }
+    letter-spacing: 0.4em;
+    color: $white;
+
+    img {
+        width: 500px;
+        display: block;
+
+        position: absolute;
+        top: 47px;
+        left: -30px;
+    }
+
+    h1 {
+        width: 60vw;
+        height: 100px;
+        background-color: $cloud;
+        position: absolute;
+        top: 125px;
+        text-align: right;
+        padding-right: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.contact {
+    width: 60vw;
+    height: 100px;
+    background-color: $cloud;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    text-align: left;
+    padding-left: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text: {
+        transform: uppercase;
+    }
+    font: {
+        family: $serifFont;
+        size: 0.7rem;
+    }
+    letter-spacing: 0.4em;
+    color: $white;
+    h2 {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+    span {
+        margin-left: 30px;
+        cursor: pointer;
+        &:hover {
+            color: $evening;
+        }
+    }
+}
