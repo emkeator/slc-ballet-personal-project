@@ -2,9 +2,9 @@
 @import './../../sass/variables';
 
 main {
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
-    background-color: $evening;
+    background-color: $night;
     p {
         position: absolute;
         top: 175px;
@@ -70,10 +70,44 @@ main {
     height: 100px;
     background-color: $cloud;
     position: absolute;
-    bottom: 50px;
-    right: 0;
+    top: calc(150vh - 125px - 50px);
+    left: 0;
+    text-align: right;
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text: {
+        transform: uppercase;
+    }
+    font: {
+        family: $serifFont;
+        size: 0.7rem;
+    }
+    letter-spacing: 0.4em;
+    color: $white;
+    h2 {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+    span {
+        margin-left: 30px;
+        cursor: pointer;
+        &:hover {
+            color: $evening;
+        }
+    }
+}
+
+.dancers {
+    width: 60vw;
+    height: 100px;
+    background-color: $cloud;
+    position: absolute;
+    top: calc(150vh - 125px - 50px);
+    left: 0;
     text-align: left;
-    padding-left: 80px;
+    padding-right: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

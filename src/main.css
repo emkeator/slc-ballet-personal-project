@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,8 +63,6 @@ table {
   color: white; }
   .navMenu div {
     position: fixed;
-    top: -300px;
-    right: -300px;
     top: -600px;
     right: -600px; }
   .navMenu ul {
@@ -86,9 +85,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
-  transform: rotate(45deg);
-  color: #fff; }
+  color: #000; }
   .menuToggle:hover {
     color: #985E6D; }
 
@@ -100,23 +97,20 @@ table {
   cursor: pointer;
   font-family: "Open Sans", sans-serif; }
   .navItem:nth-child(1) {
-    bottom: calc(25px + (5* 20px) + (5* 25px));
-    left: calc(20px + (0* 20px) + (0* 15px)); }
+    bottom: calc(30px + (4* 20px) + (4* 35px));
+    left: calc(20px + (0* 20px) + 5px); }
   .navItem:nth-child(2) {
-    bottom: calc(25px + (4* 20px) + (4* 25px));
-    left: calc(20px + (1* 20px) + (1* 15px) - 23px); }
+    bottom: calc(30px + (3* 20px) + (3* 35px));
+    left: calc(20px + (1* 20px) + 5px); }
   .navItem:nth-child(3) {
-    bottom: calc(25px + (3* 20px) + (3* 25px));
-    left: calc(20px + (2* 20px) + (2* 15px) - 37px); }
+    bottom: calc(30px + (2* 20px) + (2* 35px));
+    left: calc(20px + (2* 20px) + (1* 15px) - 5px); }
   .navItem:nth-child(4) {
-    bottom: calc(25px + (2* 20px) + (2* 25px));
-    left: calc(20px + (3* 20px) + (3* 15px) - 40px); }
+    bottom: calc(30px + (1* 20px) + (1* 35px));
+    left: calc(20px + (3* 20px) + (2* 15px) + 10px); }
   .navItem:nth-child(5) {
-    bottom: calc(25px + (1* 20px) + (1* 25px));
-    left: calc(20px + (4* 20px) + (4* 15px) - 34px); }
-  .navItem:nth-child(6) {
-    bottom: calc(25px + (0* 20px) + (0* 25px));
-    left: calc(20px + (5* 20px) + (5* 15px) + 5px); }
+    bottom: calc(32px + (0* 20px) + (0* 35px));
+    left: calc(20px + (4* 20px) + (5* 15px) + 30px); }
 
 .navLink {
   color: #fff !important;
@@ -165,9 +159,28 @@ table {
     left: calc(33vw - 150px); } }
 
 main {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
-  background-color: #192231; }
+  background-color: #0B1016; }
+  main p {
+    position: absolute;
+    top: 175px;
+    right: 10vw;
+    width: 600px;
+    height: 300px;
+    padding: 75px 50px;
+    background-color: rgba(72, 77, 106, 0.5);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 110%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    overflow: scroll; }
+
+main {
+  height: 150vh;
+  width: 100vw;
+  background-color: #0B1016; }
   main p {
     position: absolute;
     top: 175px;
@@ -215,12 +228,12 @@ main {
   height: 100px;
   background-color: #98878F;
   position: absolute;
-  bottom: 50px;
-  right: 0;
-  text-align: left;
-  padding-left: 80px;
+  top: calc(150vh - 125px - 50px);
+  left: 0;
+  text-align: right;
+  padding-right: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
@@ -234,6 +247,32 @@ main {
     margin-left: 30px;
     cursor: pointer; }
     .contact span:hover {
+      color: #192231; }
+
+.dancers {
+  width: 60vw;
+  height: 100px;
+  background-color: #98878F;
+  position: absolute;
+  top: calc(150vh - 125px - 50px);
+  left: 0;
+  text-align: left;
+  padding-right: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  color: #fff; }
+  .dancers h2 {
+    font-size: 1rem;
+    margin-right: 20px; }
+  .dancers span {
+    margin-left: 30px;
+    cursor: pointer; }
+    .dancers span:hover {
       color: #192231; }
 
 .landing {

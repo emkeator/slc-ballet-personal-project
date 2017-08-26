@@ -10,8 +10,8 @@
 
     div {
         position: fixed;
-        top: -300px;
-        right: -300px;
+        // top: -300px;
+        // right: -300px;
         top: -600px;
         right: -600px;
     }
@@ -22,7 +22,7 @@
         height: 600px;
         position: relative;
         
-        border-radius: 50%; 
+        border-radius: 50%;
     }
     
 }
@@ -47,8 +47,8 @@
     justify-content: center;
 
     color: $black;
-    transform: rotate(45deg);
-    color: $white;
+    // transform: rotate(45deg);
+    // color: $white;
 }
 
 .navItem {
@@ -64,7 +64,7 @@
         
     }
 
-    @include menu-items-placement(300px)
+    @include menu-items-placement()
 }
 
 .navLink {

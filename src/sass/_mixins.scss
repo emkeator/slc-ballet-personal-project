@@ -1,29 +1,25 @@
 
-@mixin menu-items-placement($menuWidth) {
+@mixin menu-items-placement() {
     &:nth-child(1){
-        bottom: calc(25px + (5* 20px) + (5* 25px));
-        left: calc(20px + (0* 20px) + (0* 15px));
+        bottom: calc(30px + (4* 20px) + (4* 35px));
+        left: calc(20px + (0* 20px) + 5px);
     }
     &:nth-child(2){
-        bottom: calc(25px + (4* 20px) + (4* 25px));
-        left: calc(20px + (1* 20px) + (1* 15px) - 23px);
+        bottom: calc(30px + (3* 20px) + (3* 35px));
+        left: calc(20px + (1* 20px) + 5px);
     }
     &:nth-child(3){
-        bottom: calc(25px + (3* 20px) + (3* 25px));
-        left: calc(20px + (2* 20px) + (2* 15px) - 37px);
+        bottom: calc(30px + (2* 20px) + (2* 35px));
+        left: calc(20px + (2* 20px) + (1* 15px) - 5px );
     }
     &:nth-child(4){
-        bottom: calc(25px + (2* 20px) + (2* 25px));
-        left: calc(20px + (3* 20px) + (3* 15px) - 40px);
+        bottom: calc(30px + (1* 20px) + (1* 35px));
+        left: calc(20px + (3* 20px) + (2* 15px) + 10px);
     }
     &:nth-child(5){
         // bottom: calc(20px + 20px + ($menuWidth - 40px - 80px) / 5);
-        bottom: calc(25px + (1* 20px) + (1* 25px));
-        left: calc(20px + (4* 20px) + (4* 15px) - 34px);
-    }
-    &:nth-child(6){
-        bottom: calc(25px + (0* 20px) + (0* 25px));
-        left: calc(20px + (5* 20px) + (5* 15px) + 5px);
+        bottom: calc(32px + (0* 20px) + (0* 35px));
+        left: calc(20px + (4* 20px) + (5* 15px) + 30px);
     }
 }
 

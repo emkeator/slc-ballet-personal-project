@@ -1,0 +1,27 @@
+@import './../../sass/mixins';
+@import './../../sass/variables';
+
+main {
+    height: 150vh;
+    width: 100vw;
+    background-color: $night;
+    p {
+        position: absolute;
+        top: 175px;
+        right: 10vw;
+        width: 600px;
+        height: 300px;
+        padding: 75px 50px;
+        background-color: $stormy-opaque;
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 110%;
+        }
+        text-align: center;
+        letter-spacing: 0.2em;
+        overflow: scroll;
+    }
+
+}
+

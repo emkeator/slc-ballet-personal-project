@@ -5,19 +5,9 @@ import {connect} from 'react-redux';
 import $ from 'jquery';
 import mistyCopelandOverlay from './../../images/mistyCopelandTopImg_colorScheme.png';
 import mistyCopeland from './../../images/mistyCopeland_colorScheme.png';
-import {loadDancers} from './../../ducks/reducer';
 
 
-class About extends Component {
-
-    componentWillMount() {
-        this.props.loadDancers();
-    }
-
-    componentDidMount() {
-        console.log(this.props.dancers);
-    }
-
+class Season extends Component {
     render() {
         return (<main>
                     <section>
@@ -27,15 +17,9 @@ class About extends Component {
                     </section>
                     <div className="headerContainer">
                         <img src={mistyCopeland} className="imageUnder"/>
-                        <h1>About</h1>
+                        <h1>Season</h1>
                         <img src={mistyCopelandOverlay} className="imageOver"/>
                     </div>
-                    <section className="dancers">
-                        <h2>company</h2>
-                        {this.props.loading ? 'Loading...' : this.props.dancers.map(e => {
-                            return <span>{e.name}</span>
-                        })}
-                    </section>
                     <section className="contact">
                         <h2>contact</h2>
                         <span>801-555-5555</span>
@@ -48,10 +32,7 @@ class About extends Component {
 }
 
 function mapStateToProps(state) {
-    return {
-        dancers: state.dancers,
-        loading: state.loading
-    }
+    return {}
 }
 
-export default connect(mapStateToProps, {loadDancers})(About);
+export default connect(mapStateToProps, {})(Season);
