@@ -10,6 +10,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 2);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 2);
@@ -23,6 +24,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 2);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 2);
@@ -36,6 +38,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 2);
@@ -51,6 +54,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 2);
@@ -66,6 +70,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 2);
@@ -81,6 +86,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 2);
@@ -97,6 +103,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 2);
@@ -118,6 +125,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 2);
@@ -139,6 +147,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 2);
@@ -160,6 +169,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 2);
@@ -183,6 +193,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 2);
@@ -206,6 +217,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 2);
@@ -242,6 +254,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 2);
@@ -263,6 +276,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 2);
@@ -284,6 +298,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 2);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 2);
@@ -295,30 +310,6 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 21, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 22, 1, 75, 2);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 23, 1, 75, 2);
-
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 1, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 2, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 3, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 4, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 5, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 6, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 7, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 8, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 16, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 17, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 18, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 19, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 20, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 21, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 22, 1, 75, 2);
-INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 23, 1, 75, 2);
-
 
 --orchestra
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 1, 1, 120, 4);
@@ -332,6 +323,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 4);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 4);
@@ -345,6 +337,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 4);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 4);
@@ -358,6 +351,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 4);
@@ -373,6 +367,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 4);
@@ -388,6 +383,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 4);
@@ -403,6 +399,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 4);
@@ -419,6 +416,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 4);
@@ -440,6 +438,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 4);
@@ -461,6 +460,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 4);
@@ -482,6 +482,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 4);
@@ -505,6 +506,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 4);
@@ -528,6 +530,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 4);
@@ -564,6 +567,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 4);
@@ -585,6 +589,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 4);
@@ -606,6 +611,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 4);
@@ -629,6 +635,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 4);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 4);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 4);
@@ -653,6 +660,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 6);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 6);
@@ -666,6 +674,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 6);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 6);
@@ -679,6 +688,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 6);
@@ -694,6 +704,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 6);
@@ -709,6 +720,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 6);
@@ -724,6 +736,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 6);
@@ -740,6 +753,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 6);
@@ -761,6 +775,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 6);
@@ -782,6 +797,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 6);
@@ -803,6 +819,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 6);
@@ -826,6 +843,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 6);
@@ -849,6 +867,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 6);
@@ -885,6 +904,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 6);
@@ -906,6 +926,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 6);
@@ -927,6 +948,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 6);
@@ -950,6 +972,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 6);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 6);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 6);
@@ -975,6 +998,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 8);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 8);
@@ -988,6 +1012,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 8);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 8);
@@ -1001,6 +1026,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 8);
@@ -1016,6 +1042,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 8);
@@ -1031,6 +1058,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 8);
@@ -1046,6 +1074,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 8);
@@ -1062,6 +1091,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 8);
@@ -1083,6 +1113,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 8);
@@ -1104,6 +1135,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 8);
@@ -1125,6 +1157,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 8);
@@ -1148,6 +1181,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 8);
@@ -1171,6 +1205,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 8);
@@ -1207,6 +1242,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 8);
@@ -1228,6 +1264,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 8);
@@ -1249,6 +1286,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 8);
@@ -1272,6 +1310,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 8);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 8);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 8);
@@ -1296,6 +1335,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 12);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 12);
@@ -1309,6 +1349,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 12);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 12);
@@ -1322,6 +1363,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 12);
@@ -1337,6 +1379,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 12);
@@ -1352,6 +1395,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 12);
@@ -1367,6 +1411,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 12);
@@ -1383,6 +1428,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 12);
@@ -1404,6 +1450,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 12);
@@ -1425,6 +1472,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 12);
@@ -1446,6 +1494,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 12);
@@ -1469,6 +1518,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 12);
@@ -1492,6 +1542,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 12);
@@ -1528,6 +1579,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 12);
@@ -1549,6 +1601,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 12);
@@ -1570,6 +1623,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 12);
@@ -1593,6 +1647,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 12);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 12);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 12);
@@ -1618,6 +1673,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 14);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 14);
@@ -1631,6 +1687,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 14);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 14);
@@ -1644,6 +1701,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 14);
@@ -1659,6 +1717,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 14);
@@ -1674,6 +1733,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 14);
@@ -1689,6 +1749,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 14);
@@ -1705,6 +1766,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 14);
@@ -1726,6 +1788,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 14);
@@ -1747,6 +1810,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 14);
@@ -1768,6 +1832,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 14);
@@ -1791,6 +1856,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 14);
@@ -1814,6 +1880,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 14);
@@ -1850,6 +1917,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 14);
@@ -1871,6 +1939,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 14);
@@ -1892,6 +1961,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 14);
@@ -1915,6 +1985,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 14);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 14);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 14);
@@ -1939,6 +2010,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 18);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 18);
@@ -1952,6 +2024,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 18);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 18);
@@ -1965,6 +2038,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 18);
@@ -1980,6 +2054,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 18);
@@ -1995,6 +2070,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 18);
@@ -2010,6 +2086,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 18);
@@ -2026,6 +2103,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 18);
@@ -2047,6 +2125,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 18);
@@ -2068,6 +2147,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 18);
@@ -2089,6 +2169,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 18);
@@ -2112,6 +2193,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 18);
@@ -2135,6 +2217,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 18);
@@ -2171,6 +2254,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 18);
@@ -2192,6 +2276,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 18);
@@ -2213,6 +2298,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 18);
@@ -2236,6 +2322,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 18);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 18);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 18);
@@ -2261,6 +2348,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 20);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 20);
@@ -2274,6 +2362,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 20);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 20);
@@ -2287,6 +2376,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 20);
@@ -2302,6 +2392,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 20);
@@ -2317,6 +2408,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 20);
@@ -2332,6 +2424,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 20);
@@ -2348,6 +2441,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 20);
@@ -2369,6 +2463,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 20);
@@ -2390,6 +2485,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 20);
@@ -2411,6 +2507,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 20);
@@ -2434,6 +2531,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 20);
@@ -2457,6 +2555,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 20);
@@ -2493,6 +2592,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 20);
@@ -2514,6 +2614,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 20);
@@ -2535,6 +2636,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 20);
@@ -2558,6 +2660,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 20);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 20);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 20);
@@ -2584,6 +2687,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 24);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 24);
@@ -2597,6 +2701,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 24);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 24);
@@ -2610,6 +2715,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 24);
@@ -2625,6 +2731,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 24);
@@ -2640,6 +2747,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 24);
@@ -2655,6 +2763,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 24);
@@ -2671,6 +2780,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 24);
@@ -2692,6 +2802,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 24);
@@ -2713,6 +2824,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 24);
@@ -2734,6 +2846,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 24);
@@ -2757,6 +2870,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 24);
@@ -2780,6 +2894,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 24);
@@ -2816,6 +2931,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 24);
@@ -2837,6 +2953,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 24);
@@ -2858,6 +2975,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 24);
@@ -2881,6 +2999,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 24);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 24);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 24);
@@ -2905,6 +3024,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 26);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 26);
@@ -2918,6 +3038,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 26);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 26);
@@ -2931,6 +3052,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 26);
@@ -2946,6 +3068,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 26);
@@ -2961,6 +3084,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 26);
@@ -2976,6 +3100,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 26);
@@ -2992,6 +3117,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 26);
@@ -3013,6 +3139,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 26);
@@ -3034,6 +3161,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 26);
@@ -3055,6 +3183,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 26);
@@ -3078,6 +3207,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 26);
@@ -3101,6 +3231,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 26);
@@ -3137,6 +3268,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 26);
@@ -3158,6 +3290,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 26);
@@ -3179,6 +3312,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 26);
@@ -3202,6 +3336,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 26);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 26);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 26);
@@ -3226,6 +3361,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 9, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 10, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 11, 1, 120, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 12, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'A', 13, 1, 120, 30);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 1, 1, 120, 30);
@@ -3239,6 +3375,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 9, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 10, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 11, 1, 120, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 12, 1, 120, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'B', 13, 1, 120, 30);
 
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 1, 1, 145, 30);
@@ -3252,6 +3389,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 9, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 10, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 11, 1, 145, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 12, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 13, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 14, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'C', 15, 1, 145, 30);
@@ -3267,6 +3405,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 9, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 10, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 11, 1, 145, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 12, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 13, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 14, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'D', 15, 1, 145, 30);
@@ -3282,6 +3421,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 9, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 10, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 11, 1, 145, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 12, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 13, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 14, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'E', 15, 1, 145, 30);
@@ -3297,6 +3437,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 9, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 10, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 11, 1, 145, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 12, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 13, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 14, 1, 145, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('orchestra', 'F', 15, 1, 145, 30);
@@ -3313,6 +3454,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 9, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 10, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 11, 1, 100, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 12, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 13, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 14, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'A', 15, 1, 100, 30);
@@ -3334,6 +3476,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 9, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 10, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 11, 1, 100, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 12, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 13, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 14, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'B', 15, 1, 100, 30);
@@ -3355,6 +3498,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 9, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 10, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 11, 1, 90, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 12, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 13, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 14, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'C', 15, 1, 90, 30);
@@ -3376,6 +3520,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 9, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 10, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 11, 1, 90, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 12, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 13, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 14, 1, 90, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'D', 15, 1, 90, 30);
@@ -3399,6 +3544,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 9, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 10, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 11, 1, 75, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 12, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 13, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 14, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'E', 15, 1, 75, 30);
@@ -3422,6 +3568,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 9, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 10, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 11, 1, 75, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 12, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 13, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 14, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('mezzanine', 'F', 15, 1, 75, 30);
@@ -3458,6 +3605,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 9, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 10, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 11, 1, 100, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 12, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 13, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 14, 1, 100, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'C', 15, 1, 100, 30);
@@ -3479,6 +3627,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 9, 1, 95, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 10, 1, 95, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 11, 1, 95, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 12, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 13, 1, 95, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 14, 1, 95, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'D', 15, 1, 95, 30);
@@ -3500,6 +3649,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 9, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 10, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 11, 1, 75, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 12, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 13, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 14, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'E', 15, 1, 75, 30);
@@ -3523,6 +3673,7 @@ INSERT INTO tickets (section, seat_row, num, available, price, specific_performa
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 9, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 10, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 11, 1, 75, 30);
+INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 12, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 13, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 14, 1, 75, 30);
 INSERT INTO tickets (section, seat_row, num, available, price, specific_performance_id) values ('balcony', 'F', 15, 1, 75, 30);

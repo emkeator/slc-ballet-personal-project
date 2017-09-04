@@ -1,0 +1,266 @@
+@import './../../sass/mixins';
+@import './../../sass/variables';
+
+.supportPage {
+    height: calc(100vh + 160px);
+    width: 100vw;
+    background-color: $evening;
+
+    .sectionBG {
+        position: absolute;
+        top: 160px;
+        width: 100vw;
+        height: 600px;
+        padding: 75px 50px;
+        background-color: $stormy-opaque;
+    }
+
+    section {
+        position: absolute;
+        top: 160px;
+        width: 100vw;
+        height: 600px;
+        padding: 75px 50px;
+        // background-color: $stormy-opaque;
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 110%;
+        }
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        letter-spacing: 0.2em;
+        overflow: scroll;
+
+        form {
+            margin-top: 50px;
+            width: calc(100vw - 100px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            margin: 0 0 50px 0;
+            width: 200px;
+            border: {
+                top: none;
+                right: none;
+                left: 1px solid $cloud;
+                bottom: 1px solid $cloud;                
+            }
+            height: 25px;
+            padding-left: 7px;
+            font: {
+                family: $sansFont;
+                size: 90%;
+            }
+            letter-spacing: 0.2em;
+            background-color: $stormy-input-bg;
+            color: $white;
+            &:focus {
+                outline: none;
+            }
+        }
+        .donationInput {
+            margin: 50px 0px 50px 0;
+            width: 150px;
+        }
+
+        button {
+            color: $white;
+            font: {
+                family: $sansFont;
+                size: 90%;
+            }
+            margin-left: 10px;
+            letter-spacing: 0.2em;
+            background-color: $evening;
+            border: none;
+            padding: 7px;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: $cloud;
+            }
+        }
+    }
+
+}
+
+.supportPageHeaderContainer {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    text: {
+        transform: uppercase;
+    }
+    font: {
+        family: $serifFont;
+        size: 2.3rem;
+    }
+    letter-spacing: 0.4em;
+    color: $white;
+
+    img {
+        width: 190px;
+        display: none;
+
+        position: absolute;
+        top: -5px;
+        left: -45px;
+    }
+
+    h1 {
+        width: 95vw;
+        height: 48px;
+        background-color: $black;
+        position: absolute;
+        top: 23px;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 500px) {
+    .supportPage {
+        height: calc(100vh + 160px + 50px);
+        .sectionBG {
+            top: 160px;
+            height: 400px;
+        }
+
+        section {
+            top: 160px;
+            height: 400px;
+            form {
+                margin-top: 50px;
+                width: 500px;
+            }
+
+            input {
+                margin: 0 10px 50px 10px;
+            }
+            .donationInput {
+                margin: 0 20px 0 0;
+            }
+            span {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .supportPageHeaderContainer {
+        h1 {
+            width: 80vw;
+        }
+        img {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .supportPageHeaderContainer {
+        width: 100vw;
+        height: 100vh;
+
+        font: {
+            size: 4rem;
+        }
+
+        img {
+            width: 450px;
+            top: 47px;
+            left: -80px;
+        }
+
+        h1 {
+            width: 75vw;
+            height: 100px;
+            
+            top: 125px;
+            padding-right: 10px;
+        }
+    }
+
+    .supportPage {
+        .sectionBG,
+        section {
+            top: 190px;
+            right: 15vw;
+            width: 600px;
+            height: 400px;
+            padding: 75px 50px;
+            font-size: 110%;
+        }
+    }
+}
+
+@media (max-width: 999px) and (min-height: 750px) {
+    .supportPageHeaderContainer {
+        width: 100vw;
+        height: 100vh;
+
+        font: {
+            size: 4rem;
+        }
+
+        img {
+            width: 450px;
+            top: 47px;
+            left: -80px;
+        }
+
+        h1 {
+            width: 70vw;
+            height: 80px;
+            
+            top: 125px;
+            padding-right: 10px;
+        }
+    }
+
+    .supportPage {
+        .sectionBG,
+        section {
+            top: 190px;
+            right: 10vw;
+            width: 400px;
+            height: 600px;
+            padding: 75px 50px;
+            font-size: 110%;
+        }
+
+        section {
+            form {
+                margin-top: 50px;
+                width: 300px;
+            }
+
+            input {
+                margin: 0 10px 30px 10px;
+            }
+            .donationInput {
+                margin: 0 20px 0 0;
+            }
+
+            .donationInput,
+            button {
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    
+}

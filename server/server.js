@@ -35,5 +35,27 @@ app.get('/api/shows', (req, res) => {
     })
 })
 
-const myPort = 3000;
+app.get('/api/performances', (req, res) => {
+    app.get('db').getPerformances().then(performances => {
+        res.status(200).send(performances);
+    })
+})
+
+app.get('/api/performances/tickets/:showID', (req, res) => {
+    app.get('db').getTicketsByShowID(+req.params.showID).then(tickets => {
+        res.status(200).send(tickets);
+    })
+})
+
+app.patch('/api/performances/tickets/:showID/:section/:seat_row/:num/:action', (req, res) => {
+    let {showID, section, seat_row, num, action} = req.params;
+    showID = +showID;
+    num = +num;
+    action = +action;
+    app.get('db').updateTicket(showID, section, seat_row, num, action).then(ticket => {
+        res.status(200).send(ticket);
+    })
+})
+
+const myPort = 3005;
 app.listen(myPort, () => `I'm listening on port ` + myPort);

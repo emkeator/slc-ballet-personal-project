@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './main.css';
 import Nav from './Components/Nav/Nav';
 import router from './router';
-import logo from './images/balletSLC.svg';
+// import logo from './images/balletSLC.svg';
 
 class App extends Component {
   render() {

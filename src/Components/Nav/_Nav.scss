@@ -10,13 +10,11 @@
 
     div {
         position: fixed;
-        // top: -300px;
-        // right: -300px;
         top: -600px;
         right: -600px;
     }
     ul {
-        background-color: $black-opaque;
+        background-color: $black-opaque-2;
 
         width: 600px;
         height: 600px;
@@ -32,11 +30,11 @@
     width: 30px;
     opacity: 1;
     position: fixed;
-    top: 18px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
     cursor: pointer;
     z-index: 1;
-    font-size: 300%;
+    font-size: 200%;
     
     &:hover {
         color: $sunset;
@@ -75,5 +73,15 @@
     text: {
         decoration: none !important;
         transform: uppercase !important;
+    }
+}
+
+@media (min-width: 550px) {
+    .menuToggle {
+        height: 30px;
+        width: 30px;
+        top: 18px;
+        right: 20px;
+        font-size: 300%;
     }
 }

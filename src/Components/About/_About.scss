@@ -1,134 +1,313 @@
 @import './../../sass/mixins';
 @import './../../sass/variables';
 
-main {
-    height: 150vh;
+.aboutPage {
     width: 100vw;
     background-color: $night;
-    p {
-        position: absolute;
-        top: 175px;
-        right: 10vw;
-        width: 600px;
-        height: 300px;
-        padding: 75px 50px;
-        background-color: $stormy-opaque;
-        color: $white;
-        font: {
-            family: $sansFont;
-            size: 110%;
-        }
-        text-align: center;
-        letter-spacing: 0.2em;
-        overflow: scroll;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+
+    .aboutPageContainer {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: top;
     }
 
+    .containDancers {
+        padding: 10vw 10vw 10vw 10vw;
+    }
 }
 
-.headerContainer {
+.aboutPageHeaderContainer {
     width: 100vw;
-    height: 100vh;
-
-    position: relative;
-    // border: 1px solid red;
+    height: 50px;
 
     text: {
         transform: uppercase;
+        align: center;
     }
     font: {
         family: $serifFont;
-        size: 4rem;
+        size: 2rem;
     }
     letter-spacing: 0.4em;
     color: $white;
 
-    img {
-        width: 500px;
-        display: block;
+    background-color: $evening-opaque-2;
 
-        position: absolute;
-        top: 47px;
-        left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPageBallet {
+    width: 100vw;
+    padding: 20px 20px;
+
+    background-color: $black-opaque;
+    color: $white;
+    font: {
+        family: $sansFont;
+        size:90%;
     }
+    text-align: center;
+    letter-spacing: 0.2em;
+    overflow: scroll;
+}
 
-    h1 {
-        width: 60vw;
-        height: 100px;
-        background-color: $cloud;
-        position: absolute;
-        top: 125px;
-        text-align: right;
-        padding-right: 50px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+.dancersHeader {
+    width: 100vw;
+    height: 50px;
+    background-color: $evening-opaque-2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    font: {
+        family: $serifFont;
+        size: 1.5rem;
+    }
+    letter-spacing: 0.2em;
+    color: $white;
+}
+
+.aboutPageCompany {
+    width: 100vw;
+    padding: 30px 50px;
+    background-color: $black-opaque;
+
+    color: $white;
+    font: {
+        family: $sansFont;
+        size: 90%;
+    }
+    text-align: center;
+    letter-spacing: 0.2em;
+    overflow: scroll;
+    h2 {
+        font: {
+            family: $serifFont;
+            size: 120%;
+        }
+        text-transform: uppercase;
+        margin: 30px 0 10px 0;
+    }
+    li {
+        margin: 5px;
+        color: $white;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 70vw;
     }
 }
 
 .contact {
-    width: 60vw;
-    height: 100px;
-    background-color: $cloud;
-    position: absolute;
-    top: calc(150vh - 125px - 50px);
-    left: 0;
-    text-align: right;
-    padding-right: 80px;
+    width: 100vw;
+    // height: 180px;
+    background-color: $evening-opaque;
+
+    text-align: center;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+
     text: {
         transform: uppercase;
     }
     font: {
         family: $serifFont;
-        size: 0.7rem;
+        size: 0.5rem;
     }
     letter-spacing: 0.4em;
     color: $white;
-    h2 {
-        font-size: 1rem;
-        margin-right: 20px;
+
+    div {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 15px 0;
     }
+    h2 {
+        width: 100vw;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
     span {
-        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 100vw;
+
         cursor: pointer;
         &:hover {
             color: $evening;
+        }
+    }
+
+    input {
+        margin-right: 30px;
+        width: 150px;
+        border: {
+            top: none;
+            right: none;
+            left: 1px solid $cloud;
+            bottom: 1px solid $cloud;                
+        }
+        height: 25px;
+        padding-left: 7px;
+        font: {
+            family: $sansFont;
+            size: 80%;
+        }
+        letter-spacing: 0.2em;
+        background-color: $stormy-opaque-input-bg;
+        color: $white;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    button {
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 90%;
+        }
+        margin-top: 20px;
+        letter-spacing: 0.2em;
+        background-color: $evening;
+        border: none;
+        padding: 7px;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $cloud;
+        }
+    }
+
+    .contactAlignLeft,
+    .contactAlignRight {
+        text-align: center;
+    }
+}
+
+@media (min-width: 550px){
+    .containDancers {
+        padding: 10vw 40vw 10vw 10vw;
+    }
+
+    .aboutPageCompany {
+        padding: 10px 20px;
+        div {
+            width: 33vw
+        }
+    }
+
+    .contact {
+        span {
+            width: 33vw;
+            margin-bottom: 0px;
+        }
+        .contactAlignLeft {
+            text-align: left;
+        }
+        .contactAlignRight {
+            text-align: right;
         }
     }
 }
 
-.dancers {
-    width: 60vw;
-    height: 100px;
-    background-color: $cloud;
-    position: absolute;
-    top: calc(150vh - 125px - 50px);
-    left: 0;
-    text-align: left;
-    padding-right: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text: {
-        transform: uppercase;
-    }
-    font: {
-        family: $serifFont;
-        size: 0.7rem;
-    }
-    letter-spacing: 0.4em;
-    color: $white;
-    h2 {
-        font-size: 1rem;
-        margin-right: 20px;
-    }
-    span {
-        margin-left: 30px;
-        cursor: pointer;
-        &:hover {
-            color: $evening;
+@media (min-width: 750px) {
+    .aboutPage {
+        .containDancers {
+            padding: 10vw 40vw 10vw 10vw;
         }
+    }
+
+    .aboutPageHeaderContainer {
+        height: 100px;
+        font-size: 4rem;
+    }
+
+    .aboutPageBallet {
+        padding: 60px 100px;
+        font-size: 110%;
+    }
+
+    .dancersHeader {
+        width: 500px;
+        height: 100px;
+        font-size: 3rem;
+    }
+
+    .aboutPageCompany {
+        width: 500px;
+        padding: 30px 50px;
+        font-size: 110%;
+        h2 {
+            font-size: 110%;
+            margin: 30px 0 10px 0;
+        }
+        li {
+            margin: 5px;
+        }
+    }
+
+    .contact {
+        font: {
+            family: $serifFont;
+            size: 0.8rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        input {
+            width: 150px;
+            height: 25px;
+            padding-left: 7px;
+            font: {
+                family: $sansFont;
+                size: 80%;
+            }
+        }
+
+        button {
+            font: {
+                family: $sansFont;
+                size: 90%;
+            }
+        }
+    }
+}
+
+@media (min-width: 850) {
+
+    .aboutPageHeaderContainer {
+        height: 100px;
+        font-size: 4rem;
+    }
+
+    .aboutPageBallet {
+        padding: 60px 100px;
+        font-size: 110%;
     }
 }

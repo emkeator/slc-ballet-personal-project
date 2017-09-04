@@ -1,0 +1,177 @@
+@import './../../sass/mixins';
+@import './../../sass/variables';
+
+.ticketsPage {
+    background-color: $black-opaque-2;
+    // width: 275px;
+    width: 320px;
+    min-height: 500px;
+    // border: 1px solid red;
+    padding: 30px 0px;
+    margin: 10px 0;
+    // overflow: scroll;
+    font-family: $sansFont;
+    text-align: center;
+    .ticketsInfo {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h2 {
+        font: {
+            family: $serifFont;
+            size: 120%;
+        }
+        text-transform: uppercase;
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+    li {
+        margin-bottom: 5px;
+        color: $stormy;
+        font-family: $sansFont;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 90%;
+        a,
+        Link {
+            color: $white !important;
+            text-decoration: none !important;
+        }
+        img {
+            width: calc(290px - 20px);
+            height: auto;
+        }
+    }
+
+    h3 {
+        font: {
+            family: $serifFont;
+            size: 100%;
+        }
+        text-transform: uppercase;
+        margin: 30px 0 10px 0;
+    }
+    .selectContainer {
+        border: {
+            top: none;
+            right: none;
+            left: 1px solid $cloud;
+            bottom: 1px solid $cloud;                
+        }
+        width: 250px;
+    }
+    select {
+        width: 250px;
+        margin: 0 0 1px 1px;
+        border: none;
+        padding-left: 7px;
+        font: {
+            family: $sansFont;
+            size: 50%;
+        }
+        letter-spacing: 0.2em;
+        color: $white;
+        &:focus {
+            outline: none;
+        }
+        // background-color: $stormy-input-bg;
+        background-color: $black-opaque-3;        
+        
+    }
+}
+
+.ticketChooser {
+    // border: 1px solid $cloud;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 30px 0; 
+    background-color: $black-opaque;
+    position: relative;
+    div {
+        width: 470px;
+        height: 150px;
+        // background-color: $cloud-opaque-2;
+        background-color: $white-opaque-2;
+        
+        &:hover {
+            background-color: $cloud-opaque-2;
+            transform: 
+                rotate3d(1.5, 1.5, -4, 166deg)
+                scale(0.9);
+        }
+        border-radius: 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        p {
+            padding: 0;
+            margin: 3px 3px;
+        }
+        .emptyBalcSpaceA {
+            width: 370px;
+            height: 12px;
+        }
+        .emptyBalcSpaceB {
+            width: 330px;
+            height: 12px;
+        }
+
+        transform: 
+            rotate3d(1.5, 1.5, -4, 166deg)
+            scale(0.8);
+    }
+
+    .orchestra {
+        top: 200px;
+    }
+    .balcony {
+        top: -200px;
+    }
+    .seat {
+        width: 5px;
+        height: 12px;
+        margin: 3px 3px;
+        background-color: $black;
+        &:focus {
+            outline: none;
+        }
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid $black;
+
+    }
+
+    .available {
+        background-color: $white-opaque;
+        &:hover {
+            background-color: $stormy;
+        }
+    }
+
+    .onHold {
+        background-color: $sunset;
+        &:hover {
+            background-color: $stormy;
+        }
+    }
+
+    
+}
+
+@media (min-width: 550px) {
+    .ticketsPage {
+        width: 500px;
+    }
+}

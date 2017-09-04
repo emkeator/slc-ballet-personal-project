@@ -21,7 +21,7 @@
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",
     "redux": "^3.7.2",
-    "redux-promise-middleware": "^4.3.0"
+    "redux-promise-middleware": "^4.4.1"
   },
   "scripts": {
     "start-js": "PORT=3001 react-scripts start",
@@ -33,7 +33,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "description": "Salt Lake City Ballet",
-  "main": "index.js",
+  "main": "./server/server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",

@@ -10,7 +10,12 @@
 @import './Components/Nav/Nav';
 @import './Components/Home/Home';
 @import './Components/Season/Season';
+@import './Components/Tickets/Tickets';
+@import './Components/Theatre/Theatre';
+@import './Components/Support/Support';
 @import './Components/About/About';
 
 
 @include landing-page-bg-image();
+@include about-page-bg-image();
+@include season-page-bg-image();

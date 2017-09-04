@@ -1,27 +1,126 @@
 @import './../../sass/mixins';
 @import './../../sass/variables';
 
-main {
-    height: 150vh;
+.seasonPage {
     width: 100vw;
-    background-color: $night;
-    p {
-        position: absolute;
-        top: 175px;
-        right: 10vw;
-        width: 600px;
-        height: 300px;
-        padding: 75px 50px;
-        background-color: $stormy-opaque;
+    background-color: $white;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+
+    letter-spacing: 0.2em;
+
+    .seasonPageContainer {
         color: $white;
+        width: 100vw;
+        // border: 1px solid red;
+        min-height: 100vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.season {
+    background-color: $black-opaque-2;
+    width: 290px;
+    // border: 1px solid red;
+    padding: 30px 20px;
+    margin: 10px 0;
+
+    h2 {
         font: {
-            family: $sansFont;
-            size: 110%;
+            family: $serifFont;
+            size: 120%;
         }
-        text-align: center;
-        letter-spacing: 0.2em;
-        overflow: scroll;
+        text-transform: uppercase;
+        margin: 10px 0 10px 0;
+    }
+    li {
+        margin-bottom: 5px;
+        color: $cloud;
+        font-family: $sansFont;
+    }
+
+    h3 {
+        font: {
+            family: $serifFont;
+            size: 100%;
+        }
+        text-transform: uppercase;
+        margin: 30px 0 10px 0;
+    }
+
+    span {
+        font-size: 90%;
+    }
+
+    .onSale {
+        color: $white;
+        cursor: pointer;
+        &:hover {
+            color: $sunset;
+        }
+
+        em {
+            display: block;
+            margin-top: 10px;
+            color: $sunset;
+        }
     }
 
 }
 
+.seasonPageHeaderContainer {
+    width: 100vw;
+    // height: 50px;
+    padding: 10px 0px;
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    font: {
+        family: $serifFont;
+        size: 2rem;
+    }
+    letter-spacing: 0.4em;
+    color: $white;
+
+    background-color: $black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 600px) {
+    .seasonPage {
+        .seasonPageContainer {
+            width: 50vw;
+        }
+    }
+}
+
+@media (min-width: 550px){
+ 
+}
+
+@media (min-width: 750px) {
+
+
+}
+
+@media (min-width: 850px) {
+    .seasonPageHeaderContainer {
+        font-size: 4rem;
+    }
+}

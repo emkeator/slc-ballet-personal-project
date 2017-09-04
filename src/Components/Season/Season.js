@@ -1,38 +1,98 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+// import {loadDancers} from './../../ducks/reducer';
+import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
 import $ from 'jquery';
+import Tickets from './../Tickets/Tickets';
+import axios from 'axios';
 import mistyCopelandOverlay from './../../images/mistyCopelandTopImg_colorScheme.png';
 import mistyCopeland from './../../images/mistyCopeland_colorScheme.png';
 
-
 class Season extends Component {
+    constructor() {
+        super();
+        
+        this.state = {
+            seasonShows: [],
+            showName: '',
+            currentSeason: 'fall'
+        }
+    }
+
+    componentWillMount() {
+        axios.get(`${url()}/api/shows`)
+        .then(res => {
+            console.log('I\'ve got the shows.');
+            this.setState({
+                seasonShows: res.data
+            }) 
+        });
+    }
+
+    showTickets(name) {
+        console.log('show me perormance name', name);
+        this.setState({
+            showName: name
+        })
+    }
+
+    formatShow(show) {
+        if (show.on_sale) {
+            return (
+                <li key={show.id} className="show onSale" onClick={() => this.showTickets(show.name)}>
+                    <h3>{show.name}</h3>
+                    <span>{show.run_dates}</span>
+                    <em>On sale now!</em>                   
+                </li>
+            );
+        } else {
+            return (
+                <li key={show.id} className="show">
+                    <h3>{show.name}</h3>
+                    <span>{show.run_dates}</span>                   
+                </li>
+            );
+        }
+    }
+
     render() {
-        return (<main>
-                    <section>
-                        <p>
-                            Valar morghulis. Valar morghulis. Skoriot nuhyz zaldrizesse ilzi? Sikudi nopazmi! Skoros morghot vestri? Skorī demalyti tymptir tymis, erinis ia morghulis. Valor dohaeris. Daoruni gimi, Ionos Sonaro. Ao ynoma diniluks? Toli rhuqo lotinti, kostilus. Vilibazmosa iderenni emilun. Tubi daor. Bantis zobrie issa se ossyngnoti ledys. Nuhor lir gurenna. Valor dohaeris. Valar morghulis. Valar morghulis.
-                        </p>
-                    </section>
-                    <div className="headerContainer">
-                        <img src={mistyCopeland} className="imageUnder"/>
-                        <h1>Season</h1>
-                        <img src={mistyCopelandOverlay} className="imageOver"/>
+        return (<main className="seasonPage">
+                    <div className="seasonPageHeaderContainer">
+                        <h1>Salt Lake City Ballet</h1>
                     </div>
-                    <section className="contact">
-                        <h2>contact</h2>
-                        <span>801-555-5555</span>
-                        <span>inqueries@slcb.org</span>
-                        <span>973 S Temple, SLC</span>
-                    </section>
+                    <div className="seasonPageContainer">
+                        <div className="season">
+                            <h2>Fall Season</h2>
+                            <ul>{this.state.seasonShows.length === 0 ? 'Loading shows...' : this.state.seasonShows.map(e => {
+                                if(e.season === this.state.currentSeason) {
+                                    return this.formatShow(e);
+                                }
+                            })}</ul>
+                        </div>
+                        <div className="season">
+                            <h2>Upcoming Season</h2>
+                            <ul>{this.state.seasonShows.length === 0 ? 'Loading shows...' : this.state.seasonShows.map(e => {
+                                if(e.season !== this.state.currentSeason) {
+                                    return this.formatShow(e);
+                                }
+                            })}</ul>
+                        </div>
+                    </div>
+                    <div className="seasonPageContainer"><Tickets showName={this.state.showName}/></div>
+                    
 
                 </main>);
     }
 }
 
 function mapStateToProps(state) {
-    return {}
+    return {
+        dancers: state.dancers,
+        testing: state.testing,
+        loading: state.loading
+    }
 }
 
 export default connect(mapStateToProps, {})(Season);

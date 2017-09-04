@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS performances
   id SERIAL PRIMARY KEY,
   name VARCHAR(80),
   season VARCHAR(80),
-  run_dates VARCHAR(80)
+  run_dates VARCHAR(80),
 );
 
 INSERT INTO performances (id, name, season, run_dates) VALUES (1, 'Cóppelia', 'fall', 'September 21-October 28');
@@ -39,6 +39,15 @@ INSERT INTO performances (id, name, season, run_dates) VALUES (3, 'Sylvia', 'win
 INSERT INTO performances (id, name, season, run_dates) VALUES (4, 'The Nutcracker', 'winter', 'December 1-January 7');
 INSERT INTO performances (id, name, season, run_dates) VALUES (5, 'Don Quijote', 'winter', 'January 9-February 6');
 INSERT INTO performances (id, name, season, run_dates) VALUES (6, 'Sleeping Beauty', 'winter', 'February 8-March 3');
+
+ALTER TABLE performances ADD COLUMN on_sale INTEGER;
+
+UPDATE performances SET on_sale = 1 WHERE name = 'Cóppelia';
+UPDATE performances SET on_sale = 0 WHERE name = 'Giselle';
+UPDATE performances SET on_sale = 0 WHERE name = 'Sylvia';
+UPDATE performances SET on_sale = 0 WHERE name = 'The Nutcracker';
+UPDATE performances SET on_sale = 0 WHERE name = 'Don Quijote';
+UPDATE performances SET on_sale = 0 WHERE name = 'Sleeping Beauty';
 
 
 CREATE TABLE IF NOT EXISTS shows

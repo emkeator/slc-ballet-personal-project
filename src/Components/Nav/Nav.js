@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
-import $ from 'jquery';
+// import $ from 'jquery';
 import menuToggle from './../../images/plus.svg';
 
 class Nav extends Component {
@@ -30,7 +30,7 @@ class Nav extends Component {
                         <ul>
                             <li className="navItem"><Link to="/" className="navLink">Home</Link></li>
                             <li className="navItem"><Link to="/season" className="navLink">Season</Link></li>
-                            <li className="navItem"><Link to="/tickets" className="navLink">Tickets</Link></li>
+                            <li className="navItem"><Link to="/theatre" className="navLink">Theatre</Link></li>
                             <li className="navItem"><Link to="/support" className="navLink">Support</Link></li>
                             <li className="navItem"><Link to="/about" className="navLink">About</Link></li>
                         </ul>

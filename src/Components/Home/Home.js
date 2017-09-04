@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './_Home.scss';
 import {connect} from 'react-redux';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
-import $ from 'jquery';
+// import $ from 'jquery';
 import logo from './../../images/balletSLC.svg';
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <div className="landing">
         <div className="behindLogo">
-           <img className="logo" src={logo}/>
+           <img className="logo" src={logo} alt="ballet slc logo"/>
         </div>
       </div>
     );
@@ -18,7 +18,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-    return {}
+    return state;
 }
 
 export default connect(mapStateToProps, {})(Home);
