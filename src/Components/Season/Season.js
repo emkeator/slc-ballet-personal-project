@@ -7,8 +7,9 @@ import {url} from './../../ducks/apiGetter';
 import $ from 'jquery';
 import Tickets from './../Tickets/Tickets';
 import axios from 'axios';
-import mistyCopelandOverlay from './../../images/mistyCopelandTopImg_colorScheme.png';
-import mistyCopeland from './../../images/mistyCopeland_colorScheme.png';
+import seasonMobileSVG from './../../images/season.svg';
+import seasonFullscreenSVG from './../../images/seasonFullscreen.svg';
+
 
 class Season extends Component {
     constructor() {
@@ -59,8 +60,10 @@ class Season extends Component {
 
     render() {
         return (<main className="seasonPage">
+                    
                     <div className="seasonPageHeaderContainer">
-                        <h1>Salt Lake City Ballet</h1>
+                        <img src={seasonMobileSVG} alt="Salt Lake Cit Ballet Season" className="mobileHeader"/>
+                        <img src={seasonFullscreenSVG} alt="Salt Lake Cit Ballet Season" className="fullscreenHeader"/>                        
                     </div>
                     <div className="seasonPageContainer">
                         <div className="season">
@@ -70,9 +73,9 @@ class Season extends Component {
                                     return this.formatShow(e);
                                 }
                             })}</ul>
-                        </div>
-                        <div className="season">
-                            <h2>Upcoming Season</h2>
+                        {/* </div>
+                        <div className="season"> */}
+                            <h2 className="upcoming">Upcoming Season</h2>
                             <ul>{this.state.seasonShows.length === 0 ? 'Loading shows...' : this.state.seasonShows.map(e => {
                                 if(e.season !== this.state.currentSeason) {
                                     return this.formatShow(e);
@@ -80,7 +83,7 @@ class Season extends Component {
                             })}</ul>
                         </div>
                     </div>
-                    <div className="seasonPageContainer"><Tickets showName={this.state.showName}/></div>
+                    <div className="seasonPageContainer tickets"><Tickets showName={this.state.showName}/></div>
                     
 
                 </main>);

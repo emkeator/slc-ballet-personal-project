@@ -4,39 +4,78 @@ import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
-// import $ from 'jquery';
+import $ from 'jquery';
 import axios from 'axios';
-import mistyCopelandOverlay from './../../images/mistyCopelandTopImg_colorScheme.png';
-import mistyCopeland from './../../images/mistyCopeland_colorScheme.png';
+import supportMobileSVG from './../../images/support.svg';
+import supportFullscreenSVG from './../../images/supportFullscreen.svg';
 
 class Support extends Component {
     constructor() {
         super();
         
+        this.state = {
+            emailEntry: '',
+            nameEntry: '',
+            donationAmount: ''
+        }
     }
 
     componentWillMount() {
-
     }
+
+    handleEmailInput(event) {
+        this.setState({
+            emailEntry: event.target.value
+        });
+    }
+
+    handleNameInput(event) {
+        this.setState({
+            nameEntry: event.target.value
+        });
+    }
+
+    handleDonationInput(event) {
+        if (typeof +event.target.value !== 'number') {
+            alert('Sorry, that is not a valid number. Please enter a numerical donation.')
+        }
+        this.setState({
+            donationAmount: +event.target.value
+        });
+    }
+
+    donate() {
+        // alert(`Thank you for your generous donation of $${this.state.donationAmount} to Ballet Salt Lake City! However, ${this.state.nameEntry}, is the minimum viable product of a class site. Upon completion, clicking 'Donate' will create a Stripe object, and you would be able to donate (however, since it will still be a class project, Stripe will remain permanently in test mode).`);
+        // $('.thanks').show();
+        $('input').val('');
+        // setTimeout(() => {
+        //     $('.thanks').hide();
+        // }, 10000)
+    }
+    
 
     render() {
         return (<main className="supportPage">
-                    <section className="sectionBG"></section>
                     <div className="supportPageHeaderContainer">
-                        <img src={mistyCopeland} className="supportPageImageUnder" alt="Misty Copeland"/>
-                        <h1>Support</h1>
-                        <img src={mistyCopelandOverlay} className="supportPageImageOver" alt="Misty Copeland"/>
+                        <img src={supportMobileSVG} alt="Ballet Salt Lake City support" className="mobileHeader"/>
+                        <img src={supportFullscreenSVG} alt="Ballet Salt Lake City support" className="fullscreenHeader"/>
                     </div>
-                    <section>
-                        Your gift ensures that Salt Lake City Ballet continues to perform a repertory of thrilling works that is unparalleled the world over.
-                        <form>
-                            <input className="nameInput" placeholder="Name"></input>
-                            <input className="emailInput" placeholder="Email"></input>
-                            <br/>
-                            <span>Your Donation:</span><input className="donationInput" placeholder="Gift"></input>
-                            <button>Donate</button>
-                            {/*ADD STRIPE!!!!!!!  */}
-                        </form>
+                    <section className="supportPageContainer">
+                        <div className="supportPageOuter">
+                            <p>Your gift ensures that Ballet Salt Lake City continues to perform a repertory of thrilling works that is unparalleled the world over.</p>
+                            <p className="thanks">Thank you for your generous donation of ${this.state.donationAmount} to Ballet Salt Lake City.</p>
+                            <form>
+                                <div>
+                                    <input className="nameInput" placeholder="Name" onChange={(e) => this.handleNameInput(e)}></input>
+                                    <input className="emailInput" placeholder="Email" onChange={(e) => this.handleEmailInput(e)}></input>
+                                </div>
+                                <div>
+                                    $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
+                                    <button onClick={() => this.donate()}>Donate</button>
+                                </div>
+                                {/*ADD STRIPE!!!!!!!  */}
+                            </form>
+                        </div>
                     </section>
                     
                     

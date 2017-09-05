@@ -75,39 +75,39 @@ class Tickets extends Component {
     formatSeating(section) {
         switch (section) {
             case 'orchestra':
-                return (<div className="orchestra">
-                    <p>{this.state.orchestra.slice(0, 13).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                return (<div className="orchestra" onClick={(e) => this.highlightSection(e)}>
+                    <p classname="orchSeat">{this.state.orchestra.slice(0, 13).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>          
                         })}</p>
-                    <p>{this.state.orchestra.slice(13, 26).map((e) => {
+                    <p classname="orchSeat">{this.state.orchestra.slice(13, 26).map((e) => {
                             return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.orchestra.slice(26, 41).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p classname="orchSeat">{this.state.orchestra.slice(26, 41).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.orchestra.slice(41, 56).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p classname="orchSeat">{this.state.orchestra.slice(41, 56).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.orchestra.slice(56, 71).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p classname="orchSeat">{this.state.orchestra.slice(56, 71).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.orchestra.slice(71).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p classname="orchSeat">{this.state.orchestra.slice(71).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
@@ -117,39 +117,39 @@ class Tickets extends Component {
                 break;
                 
             case 'mezzanine':
-                return (<div className="mezzanine">
-                    <p>{this.state.mezzanine.slice(0, 21).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                return (<div className="mezzanine" onClick={(e) => this.highlightSection(e)}>
+                    <p className="mezSeat">{this.state.mezzanine.slice(0, 21).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.mezzanine.slice(21, 42).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="mezSeat">{this.state.mezzanine.slice(21, 42).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.mezzanine.slice(42, 63).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="mezSeat">{this.state.mezzanine.slice(42, 63).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.mezzanine.slice(63, 86).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="mezSeat">{this.state.mezzanine.slice(63, 86).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.mezzanine.slice(86, 109).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="mezSeat">{this.state.mezzanine.slice(86, 109).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.mezzanine.slice(109).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="mezSeat">{this.state.mezzanine.slice(109).map((e) => {
+                            return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
@@ -159,53 +159,53 @@ class Tickets extends Component {
                 break;
             
             case 'balcony':
-                return (<div className="balcony">
-                    <p>{this.state.balcony.slice(0, 2).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                return (<div className="balcony" onClick={(e) => this.highlightSection(e)}>
+                    <p className="balcSeat">{this.state.balcony.slice(0, 2).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p className="emptyBalcSpaceA"></p>
-                    <p>{this.state.balcony.slice(2, 4).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat emptyBalcSpaceA"></p>
+                    <p className="balcSeat">{this.state.balcony.slice(2, 4).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p><br/>
-                    <p>{this.state.balcony.slice(4, 7).map((e) => {
-                        return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat">{this.state.balcony.slice(4, 7).map((e) => {
+                        return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                     })}</p>
-                    <p className="emptyBalcSpaceB"></p>
-                    <p>{this.state.balcony.slice(7, 10).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat emptyBalcSpaceB"></p>
+                    <p className="balcSeat">{this.state.balcony.slice(7, 10).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.balcony.slice(10, 31).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat">{this.state.balcony.slice(10, 31).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.balcony.slice(31, 52).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat">{this.state.balcony.slice(31, 52).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.balcony.slice(52, 75).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat">{this.state.balcony.slice(52, 75).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p>{this.state.balcony.slice(75).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                    <p className="balcSeat">{this.state.balcony.slice(75).map((e) => {
+                            return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event)
                                 }} 
                                 disabled={e.available < 1}> </button>         
@@ -216,6 +216,97 @@ class Tickets extends Component {
             default:
                 break;
         }
+    }
+
+    resetLevels() {
+        $('.balcony').css('transform', 'none');
+        $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
+        
+        $('.mezzanine').css('transform', 'none');
+        $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
+        
+        $('.orchestra').css('transform', 'none');
+        $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
+        
+        $('.balcony').css('top', '-200px');
+        $('.mezzanine').css('top', '0px');                
+        $('.orchestra').css('top', '200px');
+    }
+
+    highlightSection(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        let target = event.target.classList[0];
+        
+        this.resetLevels()
+        switch (target) {
+            case ('balcony'):
+                $('.balcony').css('top', '-220px');
+                $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.mezzanine').css('top', '50px');
+                $('.orchestra').css('top', '250px');
+
+                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+            case ('balcSeat'):
+                $('.balcony').css('top', '-220px');
+                $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.mezzanine').css('top', '50px');
+                $('.orchestra').css('top', '250px');
+
+                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+
+            case ('mezzanine'):
+                $('.mezzanine').css('top', '-5px');
+                $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.balcony').css('top', '-275px');
+                $('.orchestra').css('top', '265px');
+
+                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+            case ('mezSeat'):
+                $('.mezzanine').css('top', '-5px');
+                $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.balcony').css('top', '-275px');
+                $('.orchestra').css('top', '265px');
+
+                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+
+            case ('orchestra'):
+                $('.orchestra').css('top', '220px');
+                $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.balcony').css('top', '-250px');
+                $('.mezzanine').css('top', '-50px');
+
+                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+            case ('orchSeat'):
+                $('.orchestra').css('top', '220px');
+                $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
+
+                $('.balcony').css('top', '-250px');
+                $('.mezzanine').css('top', '-50px');
+
+                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                break;
+
+            default: 
+                this.resetLevels();
+        }
+        console.log(event.target.classList[0]);
     }
 
     handleBasket(seat, event) {
@@ -244,7 +335,7 @@ class Tickets extends Component {
                     <div className="ticketsInfo">
                         <h2>{!this.state.showName ? 'Select a show from Season' : this.state.showName}</h2>
                         <div className="selectContainer">
-                            <select disabled={this.state.performances.length === 0 ? true : false} onChange={(e) => this.getTickets(e.target.value)} style={{ color: this.state.performances.length === 0 ? '#494E6B' : '#fff'}}>
+                            <select disabled={this.state.performances.length === 0 ? true : false} onChange={(e) => this.getTickets(e.target.value)} style={{ color: this.state.performances.length === 0 ? '#606060' : '#fff'}}>
                                 <option disabled selected value>Select a performance date</option>
                                 {this.state.performances.length === 0 ? 'Loading shows...' : this.state.performances.map(e => {
                                     return <option key={+e.id} value={+e.id}>{e.show_date}, {e.show_time}</option>
@@ -265,7 +356,7 @@ class Tickets extends Component {
                             })}
                         </div>
                     </div>
-                    <div className="ticketChooser">
+                    <div className="ticketChooser" onClick={(e) => this.highlightSection(e)}>
 
                         <h2>Select Seats</h2>
                         {/* <button>View Basket</button> */}

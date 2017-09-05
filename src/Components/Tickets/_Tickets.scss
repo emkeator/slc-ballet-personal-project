@@ -3,7 +3,6 @@
 
 .ticketsPage {
     background-color: $black-opaque-2;
-    // width: 275px;
     width: 320px;
     min-height: 500px;
     // border: 1px solid red;
@@ -127,17 +126,25 @@
             width: 330px;
             height: 12px;
         }
+    }
 
+    .mezzanine {
+        top: 0px;
         transform: 
             rotate3d(1.5, 1.5, -4, 166deg)
             scale(0.8);
     }
-
     .orchestra {
         top: 200px;
+        transform: 
+            rotate3d(1.5, 1.5, -4, 166deg)
+            scale(0.8);
     }
     .balcony {
         top: -200px;
+        transform: 
+            rotate3d(1.5, 1.5, -4, 166deg)
+            scale(0.8);
     }
     .seat {
         width: 5px;

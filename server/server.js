@@ -57,5 +57,9 @@ app.patch('/api/performances/tickets/:showID/:section/:seat_row/:num/:action', (
     })
 })
 
+app.get('/api/theSecretLiesWithCharlotte', (req, res) => {
+    res.status(200).send({charlotte: process.env.GOOGLE_API_KEY});
+})
+
 const myPort = 3005;
-app.listen(myPort, () => `I'm listening on port ` + myPort);
+app.listen(myPort, () => console.log(`I'm listening on port ` + myPort));

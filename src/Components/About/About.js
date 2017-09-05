@@ -4,17 +4,19 @@ import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
-// import $ from 'jquery';
+import $ from 'jquery';
 import axios from 'axios';
-import mistyCopelandOverlay from './../../images/mistyCopelandTopImg_colorScheme.png';
-import mistyCopeland from './../../images/mistyCopeland_colorScheme.png';
+import aboutMobileSVG from './../../images/about.svg';
+import aboutFullscreenSVG from './../../images/aboutFullscreen.svg';
 
 class About extends Component {
     constructor() {
         super();
         
         this.state = {
-            dancers: []
+            dancers: [],
+            emailEntry: '',
+            nameEntry: '',
         }
     }
 
@@ -28,23 +30,57 @@ class About extends Component {
         });
     }
 
-    componentDidMount() {
+    handleEmailInput(event) {
+        this.setState({
+            emailEntry: event.target.value
+        });
+    }
+
+    handleNameInput(event) {
+        this.setState({
+            nameEntry: event.target.value
+        });
+    }
+
+    subscribe() {
+        if (this.state.nameEntry.toLowerCase().includes('alan')) {
+            alert(`Sorry, Alan Miller, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at alienStar@mothership.org.`);
+        } else if (this.state.nameEntry.toLowerCase().includes('andi')) {
+            alert(`Sorry, Maggie Essence, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at meatGap@dogFacts.org.`);
+        } else if (this.state.nameEntry.toLowerCase().includes('marissa f')) {
+            alert(`Sorry, Princess Hackamore, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at makesTheBestSalsa@meatGapManor.org.`);
+        } else if (this.state.nameEntry.toLowerCase().includes('janise')) {
+            alert(`Sorry, Buddy Charlwood, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at thunderFromDownUnder@MorningMeat.org.`);
+        } else if (this.state.nameEntry.toLowerCase().includes('andrew acuna')) {
+            alert(`Sorry, My Sun and Stars, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at juanSnow@tesla.org.`);
+        } else {
+            alert(`Sorry, ${this.state.nameEntry}, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at ${this.state.emailEntry}.`);
+        }
+        $('input').val('');
     }
 
     render() {
         return (<main className="aboutPage">
+                    <div className="aboutPageHeaderContainer">
+                        <img src={aboutMobileSVG} alt="Ballet Salt Lake City about" className="mobileHeader"/>
+                        <img src={aboutFullscreenSVG} alt="Ballet Salt Lake City about" className="fullscreenHeader"/>
+                    </div>
                     <div className="aboutPageContainer">
-                        <h1 className="aboutPageHeaderContainer">About</h1>
+                        
                         <p className="aboutPageBallet">
-                            Valar morghulis. Valar morghulis. Skoriot nuhyz zaldrizesse ilzi? Sikudi nopazmi! Skoros morghot vestri? Skorī demalyti tymptir tymis, erinis ia morghulis. Valor dohaeris. Daoruni gimi, Ionos Sonaro. Ao ynoma diniluks? Toli rhuqo lotinti, kostilus. Vilibazmosa iderenni emilun. Tubi daor. Bantis zobrie issa se ossyngnoti ledys. Nuhor lir gurenna. Valor dohaeris. Valar morghulis. Valar morghulis.
+                            Ballet Salt Lake City is one of the foremost dance companies in the world, with a roster 
+                            of spectacular dancers and an unparalleled repertory. The Company was founded in 1934 by 
+                            Janise Platter and Alan Miller, and it quickly became world-renowned for its athletic and 
+                            contemporary style. Marissa Lloyd-Brennon joined Ballet SLC the following year and, with 
+                            Miller, helped to build the astounding repertory and firmly establish the Company in Salt 
+                            Lake. Ballet SLC is committed to promoting ceative excellence and nurturing a new generation 
+                            of dancers and choreographers. 
                         </p>
                     </div>
                     
                     <div className="aboutPageContainer containDancers">
-                        <div className="dancersHeader">
-                            <h1>company</h1>
-                        </div>
                         <div className="aboutPageCompany">
+                            <h1>company</h1>
                             <div>
                                 <h2>Principals</h2>
                                 <ul>
@@ -80,9 +116,9 @@ class About extends Component {
                         </div>
                         <div>
                             <span className="contactAlignRight">subscribe:</span>
-                            <span><input placeholder="Name" className="inputFirst"></input></span>
-                            <span className="contactAlignLeft"><input placeholder="Email"></input></span>
-                            <span><button>Subscribe</button></span>
+                            <span><input placeholder="Name" className="inputFirst" onChange={(event) => this.handleNameInput(event)}></input></span>
+                            <span className="contactAlignLeft"><input placeholder="Email" onChange={(event) => this.handleEmailInput(event)}></input></span>
+                            <span><button onClick={() => this.subscribe()}>Subscribe</button></span>
                         </div>
                     </div>
 
