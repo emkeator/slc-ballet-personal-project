@@ -48,19 +48,19 @@
         background-image: url('./images/aboutBGMobile.jpeg');
     }
 
-    @media (min-width: 450px) {
+    @media (min-width: 550px) {
         .aboutPage {
             background-image: url('./images/aboutBGMidsize.jpeg');
         }
     }
 
-    @media(min-width: 1000px) and (max-height:800px) {
+    @media(min-width: 900px) and (max-height:800px) {
         .aboutPage {
             background-image: url('./images/aboutBGFullscreen.jpeg');
         }
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:1100px) {
         .aboutPage {
             background-image: url('./images/aboutBGFullscreen.jpeg');
         }

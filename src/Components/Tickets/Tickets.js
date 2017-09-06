@@ -7,8 +7,7 @@ import {url} from './../../ducks/apiGetter';
 import $ from 'jquery';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import coppelia from './../../images/coppelia.jpeg';
-//would also include other images if the tickets were on sale
+
 
 class Tickets extends Component {
     constructor() {
@@ -25,25 +24,19 @@ class Tickets extends Component {
             basket: {
                 seats: [],
                 total: 0
-            }
+            },
+            currentLevel: '',
+            currentSeat: ''
         }
     }
 
     componentWillMount() {
-        // $(document).ready(() => {
-        //     $('.seat').click(function(){
-        //         $(this).toggleClass('onHold');
-        //         console.log($(this));
-        //     })
-        // });
         
     }
 
     componentWillReceiveProps(newProps) {
-        console.log('My new props are', newProps);
         axios.get(`${url()}/api/performances`)
             .then(res => {
-                // console.log('I\'ve got the performances.');
                 this.setState({
                     performances: res.data.filter((e) => {if (e.name === newProps.showName) return e})
                 }) 
@@ -66,7 +59,6 @@ class Tickets extends Component {
                 balcony: res.data.slice(218),
                 specificPerformanceID: +id
             })
-            console.log(this.state.orchestra);
         });
         
         
@@ -76,40 +68,52 @@ class Tickets extends Component {
         switch (section) {
             case 'orchestra':
                 return (<div className="orchestra" onClick={(e) => this.highlightSection(e)}>
-                    <p classname="orchSeat">{this.state.orchestra.slice(0, 13).map((e) => {
+                    <p className="orchSeat">{this.state.orchestra.slice(0, 13).map((e) => {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>          
                         })}</p>
-                    <p classname="orchSeat">{this.state.orchestra.slice(13, 26).map((e) => {
-                            return <button className={`seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                    <p className="orchSeat">{this.state.orchestra.slice(13, 26).map((e) => {
+                            return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p classname="orchSeat">{this.state.orchestra.slice(26, 41).map((e) => {
+                    <p className="orchSeat">{this.state.orchestra.slice(26, 41).map((e) => {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p classname="orchSeat">{this.state.orchestra.slice(41, 56).map((e) => {
+                    <p className="orchSeat">{this.state.orchestra.slice(41, 56).map((e) => {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p classname="orchSeat">{this.state.orchestra.slice(56, 71).map((e) => {
+                    <p className="orchSeat">{this.state.orchestra.slice(56, 71).map((e) => {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
-                    <p classname="orchSeat">{this.state.orchestra.slice(71).map((e) => {
+                    <p className="orchSeat">{this.state.orchestra.slice(71).map((e) => {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
 
@@ -120,38 +124,50 @@ class Tickets extends Component {
                 return (<div className="mezzanine" onClick={(e) => this.highlightSection(e)}>
                     <p className="mezSeat">{this.state.mezzanine.slice(0, 21).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="mezSeat">{this.state.mezzanine.slice(21, 42).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="mezSeat">{this.state.mezzanine.slice(42, 63).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="mezSeat">{this.state.mezzanine.slice(63, 86).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="mezSeat">{this.state.mezzanine.slice(86, 109).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="mezSeat">{this.state.mezzanine.slice(109).map((e) => {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
 
@@ -162,52 +178,68 @@ class Tickets extends Component {
                 return (<div className="balcony" onClick={(e) => this.highlightSection(e)}>
                     <p className="balcSeat">{this.state.balcony.slice(0, 2).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="balcSeat emptyBalcSpaceA"></p>
                     <p className="balcSeat">{this.state.balcony.slice(2, 4).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p><br/>
                     <p className="balcSeat">{this.state.balcony.slice(4, 7).map((e) => {
                         return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                     })}</p>
                     <p className="balcSeat emptyBalcSpaceB"></p>
                     <p className="balcSeat">{this.state.balcony.slice(7, 10).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="balcSeat">{this.state.balcony.slice(10, 31).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="balcSeat">{this.state.balcony.slice(31, 52).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="balcSeat">{this.state.balcony.slice(52, 75).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
                     <p className="balcSeat">{this.state.balcony.slice(75).map((e) => {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
-                                    this.handleBasket(e, event)
-                                }} 
+                                    this.handleBasket(e, event.target)
+                                }}
+                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
 
@@ -218,7 +250,26 @@ class Tickets extends Component {
         }
     }
 
+    showCurrentSeat(event, available, seat_row, num, price, isMouseOverMe){
+        event.preventDefault();
+        event.stopPropagation();
+        let inCart = '';
+        if (event.target.classList[2] === 'onHold') inCart = ' - IN BASKET'
+        if(isMouseOverMe) {
+            this.setState({
+                currentSeat: `${seat_row}${num}   $${price}${inCart}`
+            });
+        } else {
+            this.setState({
+                currentSeat: ''
+            });
+        }
+    }
+    
     resetLevels() {
+        this.setState({
+            currentLevel: ''
+        });
         $('.balcony').css('transform', 'none');
         $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
         
@@ -241,6 +292,9 @@ class Tickets extends Component {
         this.resetLevels()
         switch (target) {
             case ('balcony'):
+                this.setState({
+                    currentLevel: 'balcony'
+                });
                 $('.balcony').css('top', '-220px');
                 $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
@@ -251,6 +305,9 @@ class Tickets extends Component {
                 $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 break;
             case ('balcSeat'):
+                this.setState({
+                    currentLevel: 'balcony'
+                });
                 $('.balcony').css('top', '-220px');
                 $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
@@ -262,27 +319,36 @@ class Tickets extends Component {
                 break;
 
             case ('mezzanine'):
-                $('.mezzanine').css('top', '-5px');
+                this.setState({
+                    currentLevel: 'mezzanine'
+                });
+                $('.mezzanine').css('top', '20px');
                 $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
-                $('.balcony').css('top', '-275px');
-                $('.orchestra').css('top', '265px');
+                $('.balcony').css('top', '-250px');
+                $('.orchestra').css('top', '290px');
 
                 $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 break;
             case ('mezSeat'):
-                $('.mezzanine').css('top', '-5px');
+                this.setState({
+                    currentLevel: 'mezzanine'
+                });
+                $('.mezzanine').css('top', '20px');
                 $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
-                $('.balcony').css('top', '-275px');
-                $('.orchestra').css('top', '265px');
+                $('.balcony').css('top', '-250px');
+                $('.orchestra').css('top', '290px');
 
                 $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 break;
 
             case ('orchestra'):
+                this.setState({
+                    currentLevel: 'orchestra'
+                });
                 $('.orchestra').css('top', '220px');
                 $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
@@ -293,6 +359,9 @@ class Tickets extends Component {
                 $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
                 break;
             case ('orchSeat'):
+                this.setState({
+                    currentLevel: 'orchestra'
+                });
                 $('.orchestra').css('top', '220px');
                 $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
 
@@ -306,51 +375,84 @@ class Tickets extends Component {
             default: 
                 this.resetLevels();
         }
-        console.log(event.target.classList[0]);
+        // console.log(event.target.classList[0]);
     }
 
-    handleBasket(seat, event) {
-        event.target.classList.toggle('onHold');
-        event.target.classList.toggle('available');
+    handleBasket(seat, target) {
+        //seat = {thisSeatObj: {seatinfo}, target: eventtarget}
+        let clickedSeat = {thisSeatObj: seat, target: target};
+        target.classList.toggle('onHold');
+        target.classList.toggle('available');
         let removed = false;
+
         let x = this.state.basket.seats.filter((e) => {
-            if(e.id !== seat.id) {
+            if(e.thisSeatObj.id !== seat.id) {
+                //if the id in thisSeatObj's info matches the passed-in seat...
                 return e;
             } else {
                 removed = true;
             }
         })
         if (!removed) {
+            //push in the new clickedSeat obj, complete with its event target being tracked
             x = this.state.basket.seats.slice(0)
-            x.push(seat);
+            x.push(clickedSeat);
             let y = {total: this.state.basket.total + seat.price, seats: x}
             this.setState({
                 basket: y
             });
+        } else {
+            let y = {total: this.state.basket.total - seat.price, seats: x}
+            this.setState({
+                basket: y
+            }); 
         }
+    }
+
+    showBasket(showYesOrNo) {
+        if(showYesOrNo) {
+            $('.ticketCheckout').css('display', 'flex');
+        } else {
+            $('.ticketCheckout').hide();
+        }
+    }
+
+    checkoutNow(){
+        alert(`Sorry, this is just the MVP of a class project. Upon completion, you will be able to use Stripe to 'pay', however, since this is a project, Stripe will remain in test mode and not actually collect data.`);
+        let body = { action: 0, tickets: []};
+        this.state.basket.seats.map(seat => {
+            let {specific_performance_id, section, seat_row, num} = seat.thisSeatObj;
+            body.tickets.push({specific_performance_id, section, seat_row, num})
+        });
+        axios.patch(`${url()}/api/performances/tickets/updateMany`, body)
+            .then(res => {
+                this.getTickets(this.state.specificPerformanceID);
+                this.setState({
+                    basket: {total: 0, seats: []}
+                });
+            });
     }
 
     render() {
         return (<div className="ticketsPage">
-                    <div className="ticketsInfo">
-                        <h2>{!this.state.showName ? 'Select a show from Season' : this.state.showName}</h2>
+                    <div className="ticketsInfo" onClick={(e) => this.highlightSection(e)}>
+                        <h2 onClick={(e) => this.highlightSection(e)}>{!this.state.showName ? 'Select a show from Season' : this.state.showName}</h2>
                         <div className="selectContainer">
-                            <select disabled={this.state.performances.length === 0 ? true : false} onChange={(e) => this.getTickets(e.target.value)} style={{ color: this.state.performances.length === 0 ? '#606060' : '#fff'}}>
+                            <select onClick={(e) => this.highlightSection(e)} disabled={this.state.performances.length === 0 ? true : false} onChange={(e) => this.getTickets(e.target.value)} style={{ color: this.state.performances.length === 0 ? '#606060' : '#fff'}}>
                                 <option disabled selected value>Select a performance date</option>
                                 {this.state.performances.length === 0 ? 'Loading shows...' : this.state.performances.map(e => {
                                     return <option key={+e.id} value={+e.id}>{e.show_date}, {e.show_time}</option>
                                 })}
                             </select>
                         </div>
-                        <div>
+                        <div onClick={(e) => this.highlightSection(e)}>
                             {this.state.specificPerformanceID === -1 ? '' : this.state.performances.map(e => {                          
                                 if (e.id === +this.state.specificPerformanceID) {
-                                    return <div key={+e.id}>
+                                    return <div key={+e.id} onClick={(e) => this.highlightSection(e)}>
                                         <p>{e.show_date}</p>
                                         <p>{e.show_time}</p>
                                         <p><Link to='/theatre'>David Eccles Theatre</Link></p>                                    
                                         <p>Starring: {e.principals}</p>
-                                        <img width='250px' src={coppelia} alt="misty copeland in coppelia"/>
                                     </div>
                                 }
                             })}
@@ -359,13 +461,39 @@ class Tickets extends Component {
                     <div className="ticketChooser" onClick={(e) => this.highlightSection(e)}>
 
                         <h2>Select Seats</h2>
-                        {/* <button>View Basket</button> */}
-                        {/* <span>{dispaly current seat, price here}</span> */}
+                        <span id="levelSpan">{this.state.currentLevel}</span>
+                        <span id="seatSpan">{this.state.currentSeat}</span> 
                         {this.formatSeating('orchestra')}
                         {this.formatSeating('mezzanine')}
                         {this.formatSeating('balcony')}
-                        <span>stage</span>
+                        
+                        <span id="stageSpan">stage</span>
                                                
+                    </div>
+                    <div id="basketSpan" onClick={(e) => this.highlightSection(e)}>${this.state.basket.total}  <button disabled={this.state.basket.total === 0 ? true : false} 
+                                                                            style={{backgroundColor: this.state.basket.total === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}
+                                                                            onClick={() => this.showBasket(true)}>Basket</button></div>
+
+                    <div className="ticketCheckout" >
+                            <div>
+                                <h1>Basket</h1>
+                                <span>Total: ${this.state.basket.total}</span>
+                                <button disabled={this.state.basket.total === 0 ? true : false} 
+                                        style={{backgroundColor: this.state.basket.total === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}
+                                        onClick={() => this.checkoutNow()}>Checkout</button>
+                                <ul >
+                                    {this.state.basket.seats.map((seat) =>{
+                                        //seat = {thisSeatObj: {seat info}, target: target}
+                                        return(
+                                            <li key={seat.thisSeatObj.id}>
+                                                <span>{`${seat.thisSeatObj.section[0].toUpperCase() + seat.thisSeatObj.section.slice(1)} ${seat.thisSeatObj.seat_row}${seat.thisSeatObj.num}`}</span>
+                                                <span className="seatPrice">{`$${seat.thisSeatObj.price}`}  <em onClick={() => this.handleBasket(seat.thisSeatObj, seat.target)}>☒</em></span>                                            
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                                <button onClick={() => this.showBasket(false)}>Return to Seats</button>
+                            </div>
                     </div>
 
                 </div>);

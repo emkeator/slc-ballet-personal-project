@@ -16,7 +16,7 @@ class Support extends Component {
         this.state = {
             emailEntry: '',
             nameEntry: '',
-            donationAmount: ''
+            donationAmount: 0
         }
     }
 
@@ -48,6 +48,7 @@ class Support extends Component {
         // alert(`Thank you for your generous donation of $${this.state.donationAmount} to Ballet Salt Lake City! However, ${this.state.nameEntry}, is the minimum viable product of a class site. Upon completion, clicking 'Donate' will create a Stripe object, and you would be able to donate (however, since it will still be a class project, Stripe will remain permanently in test mode).`);
         // $('.thanks').show();
         $('input').val('');
+        $('.donationInput').val(0);
         // setTimeout(() => {
         //     $('.thanks').hide();
         // }, 10000)
@@ -71,7 +72,7 @@ class Support extends Component {
                                 </div>
                                 <div>
                                     $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
-                                    <button onClick={() => this.donate()}>Donate</button>
+                                    <button onClick={() => this.donate()} style={{backgroundColor: this.state.donationAmount === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
                                 </div>
                                 {/*ADD STRIPE!!!!!!!  */}
                             </form>

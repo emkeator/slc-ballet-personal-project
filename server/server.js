@@ -57,6 +57,16 @@ app.patch('/api/performances/tickets/:showID/:section/:seat_row/:num/:action', (
     })
 })
 
+app.patch('/api/performances/tickets/updateMany', (req, res) => {
+    let {tickets, action} = req.body;
+    action = +action;
+    tickets.map(e => {
+        app.get('db').updateTicket(+e.specific_performance_id, e.section, e.seat_row, +e.num, action).then(ticket => {
+            res.status(200).send(ticket);
+        })
+    })
+})
+
 app.get('/api/theSecretLiesWithCharlotte', (req, res) => {
     res.status(200).send({charlotte: process.env.GOOGLE_API_KEY});
 })

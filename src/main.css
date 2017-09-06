@@ -181,11 +181,8 @@ table {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around; }
-  .seasonPage .tickets {
-    align-items: flex-start !important; }
 
 .season {
   background-color: rgba(0, 0, 0, 0.8);
@@ -210,6 +207,8 @@ table {
     font-size: 100%;
     text-transform: uppercase;
     margin: 30px 0 10px 0; }
+  .season img {
+    margin-top: 10px; }
   .season span {
     font-size: 90%; }
   .season .onSale {
@@ -238,6 +237,7 @@ table {
   min-height: 500px;
   padding: 30px 0px;
   margin: 10px 0;
+  overflow: scroll;
   font-family: "Open Sans", sans-serif;
   text-align: center; }
   .ticketsPage .ticketsInfo {
@@ -290,14 +290,45 @@ table {
     .ticketsPage select:focus {
       outline: none; }
 
+#basketSpan {
+  padding: 15px 0 0 0; }
+  #basketSpan button {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    background-color: rgba(152, 135, 143, 0.85);
+    border: none;
+    padding: 7px;
+    cursor: pointer; }
+    #basketSpan button:focus {
+      outline: none; }
+    #basketSpan button:hover {
+      background-color: rgba(152, 93, 109, 0.85); }
+
 .ticketChooser {
+  border: 1px solid #98878F;
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 30px 0;
   background-color: rgba(0, 0, 0, 0.6);
-  position: relative; }
+  position: relative;
+  width: 500px; }
+  .ticketChooser h2 {
+    position: absolute;
+    top: 10px; }
+  .ticketChooser span {
+    position: absolute;
+    width: 100%;
+    height: 20px; }
+  .ticketChooser #levelSpan {
+    top: 50px; }
+  .ticketChooser #seatSpan {
+    top: 70px; }
+  .ticketChooser #stageSpan {
+    bottom: 0; }
   .ticketChooser div {
     width: 470px;
     height: 150px;
@@ -347,6 +378,69 @@ table {
     background-color: #985E6D; }
     .ticketChooser .onHold:hover {
       background-color: #494E6B; }
+
+.ticketCheckout {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center; }
+  .ticketCheckout div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: #000; }
+  .ticketCheckout h1 {
+    width: 100%;
+    margin: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem; }
+  .ticketCheckout span {
+    width: 100%; }
+  .ticketCheckout ul {
+    width: 100%; }
+  .ticketCheckout li {
+    width: 100%;
+    color: #fff;
+    font-size: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center; }
+    .ticketCheckout li span {
+      text-align: left;
+      width: 65%;
+      height: 40px;
+      padding: 5px; }
+  .ticketCheckout .seatPrice {
+    width: 35%;
+    padding-left: 10px; }
+    .ticketCheckout .seatPrice em {
+      font-size: 130%;
+      cursor: pointer; }
+      .ticketCheckout .seatPrice em:hover {
+        color: #985E6D; }
+  .ticketCheckout button {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 90%;
+    margin: 15px 30px;
+    letter-spacing: 0.2em;
+    background-color: rgba(152, 135, 143, 0.85);
+    border: none;
+    padding: 7px;
+    cursor: pointer; }
+    .ticketCheckout button:focus {
+      outline: none; }
+    .ticketCheckout button:hover {
+      background-color: rgba(152, 93, 109, 0.85); }
 
 @media (min-width: 550px) {
   .ticketsPage {
@@ -669,15 +763,15 @@ table {
 .aboutPage {
   background-image: url("./images/aboutBGMobile.jpeg"); }
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
   .aboutPage {
     background-image: url("./images/aboutBGMidsize.jpeg"); } }
 
-@media (min-width: 1000px) and (max-height: 800px) {
+@media (min-width: 900px) and (max-height: 800px) {
   .aboutPage {
     background-image: url("./images/aboutBGFullscreen.jpeg"); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .aboutPage {
     background-image: url("./images/aboutBGFullscreen.jpeg"); } }
 

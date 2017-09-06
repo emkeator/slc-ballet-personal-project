@@ -1,6 +1,7 @@
 @import './../../sass/mixins';
 @import './../../sass/variables';
 
+
 .ticketsPage {
     background-color: $black-opaque-2;
     width: 320px;
@@ -8,7 +9,7 @@
     // border: 1px solid red;
     padding: 30px 0px;
     margin: 10px 0;
-    // overflow: scroll;
+    overflow: scroll;
     font-family: $sansFont;
     text-align: center;
     .ticketsInfo {
@@ -85,8 +86,31 @@
     }
 }
 
+#basketSpan {
+    padding: 15px 0 0 0;
+    button {
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 90%;
+        }
+        
+        letter-spacing: 0.2em;
+        background-color: $cloud-opaque-2;
+        border: none;
+        padding: 7px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $sunset-opaque-2;
+        }
+    }
+}
+
 .ticketChooser {
-    // border: 1px solid $cloud;
+    border: 1px solid $cloud;
     overflow: scroll;
     display: flex;
     flex-wrap: wrap;
@@ -94,10 +118,31 @@
     padding: 30px 0; 
     background-color: $black-opaque;
     position: relative;
+    width: 500px;
+    h2 {
+        position: absolute;
+        top: 10px;
+    }
+    span {
+        position: absolute;
+        width: 100%;
+        height: 20px;
+    }
+
+    #levelSpan {
+        top: 50px;
+    }
+
+    #seatSpan {
+        top: 70px;
+    }
+
+    #stageSpan {
+        bottom: 0;
+    }
     div {
         width: 470px;
         height: 150px;
-        // background-color: $cloud-opaque-2;
         background-color: $white-opaque-2;
         
         &:hover {
@@ -175,6 +220,101 @@
     }
 
     
+}
+// style={{display: this.state.basketToggle ? 'block' : 'none'}}
+.ticketCheckout {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: $black-opaque-2;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 300px;
+        // min-height: 200px;
+        background-color: $black;
+
+    }
+
+    h1 {
+        width: 100%;
+        margin: 30px;
+        font: {
+            family: $serifFont;
+            size: 2rem;
+        }
+    }
+
+    span {
+        width: 100%;
+    }
+    ul {
+        width: 100%;
+    }
+    li {
+        width: 100%;
+        color: $white;
+        font-size: 100%;
+
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+
+        span {
+            text-align: left;
+            width: 65%;
+            height: 40px;
+            padding: 5px;
+            // display: flex;
+            // align-items: center;
+            // border: 1px red solid;
+        }
+    }
+
+    .seatPrice {
+        width: 35%;
+        padding-left: 10px;
+        em {
+            font-size: 130%;
+            cursor: pointer;
+            &:hover {
+                color: $sunset;
+            }
+        }
+    }
+    button {
+        color: $white;
+        font: {
+            family: $sansFont;
+            size: 90%;
+        }
+        margin: 15px 30px;
+        
+        letter-spacing: 0.2em;
+        background-color: $cloud-opaque-2;
+        border: none;
+        padding: 7px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $sunset-opaque-2;
+        }
+    }
 }
 
 @media (min-width: 550px) {

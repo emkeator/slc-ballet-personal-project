@@ -118,7 +118,7 @@ class About extends Component {
                             <span className="contactAlignRight">subscribe:</span>
                             <span><input placeholder="Name" className="inputFirst" onChange={(event) => this.handleNameInput(event)}></input></span>
                             <span className="contactAlignLeft"><input placeholder="Email" onChange={(event) => this.handleEmailInput(event)}></input></span>
-                            <span><button onClick={() => this.subscribe()}>Subscribe</button></span>
+                            <span><button onClick={() => this.subscribe()} style={{backgroundColor: this.state.emailEntry.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Subscribe</button></span>
                         </div>
                     </div>
 
