@@ -16,7 +16,7 @@ class Support extends Component {
         this.state = {
             emailEntry: '',
             nameEntry: '',
-            donationAmount: 0
+            donationAmount: ''
         }
     }
 
@@ -36,7 +36,7 @@ class Support extends Component {
     }
 
     handleDonationInput(event) {
-        if (typeof +event.target.value !== 'number') {
+        if (isNaN(+event.target.value / 3)) {
             alert('Sorry, that is not a valid number. Please enter a numerical donation.')
         }
         this.setState({
@@ -45,13 +45,13 @@ class Support extends Component {
     }
 
     donate() {
-        // alert(`Thank you for your generous donation of $${this.state.donationAmount} to Ballet Salt Lake City! However, ${this.state.nameEntry}, is the minimum viable product of a class site. Upon completion, clicking 'Donate' will create a Stripe object, and you would be able to donate (however, since it will still be a class project, Stripe will remain permanently in test mode).`);
-        // $('.thanks').show();
+        alert(`Thank you for your generous donation of $${this.state.donationAmount} to Ballet Salt Lake City! However, ${this.state.nameEntry}, this is only the minimum viable product of a class site. Upon completion, clicking 'Donate' will create a Stripe object, and you would be able to donate (however, since it will still be a class project, Stripe will remain permanently in test mode).`);
+        $('.thanks').show();
         $('input').val('');
-        $('.donationInput').val(0);
-        // setTimeout(() => {
-        //     $('.thanks').hide();
-        // }, 10000)
+        $('.donationInput').val('');
+        setTimeout(() => {
+            $('.thanks').hide();
+        }, 5000);
     }
     
 
@@ -64,7 +64,6 @@ class Support extends Component {
                     <section className="supportPageContainer">
                         <div className="supportPageOuter">
                             <p>Your gift ensures that Ballet Salt Lake City continues to perform a repertory of thrilling works that is unparalleled the world over.</p>
-                            <p className="thanks">Thank you for your generous donation of ${this.state.donationAmount} to Ballet Salt Lake City.</p>
                             <form>
                                 <div>
                                     <input className="nameInput" placeholder="Name" onChange={(e) => this.handleNameInput(e)}></input>
@@ -72,8 +71,9 @@ class Support extends Component {
                                 </div>
                                 <div>
                                     $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
-                                    <button onClick={() => this.donate()} style={{backgroundColor: this.state.donationAmount === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
+                                    <button onClick={() => this.donate()} type='button' style={{backgroundColor: this.state.donationAmount === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
                                 </div>
+                                <p className="thanks">Thank you for your generous donation of ${this.state.donationAmount} to Ballet Salt Lake City.</p>
                                 {/*ADD STRIPE!!!!!!!  */}
                             </form>
                         </div>
