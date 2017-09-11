@@ -92,7 +92,6 @@ const postStripeCharge = res => (stripeErr, stripeRes) => {
 }
 
 app.post("/stripe", (req, res) => {
-    console.log(res);
     stripe.charges.create(req.body, postStripeCharge(res));
 });
 
