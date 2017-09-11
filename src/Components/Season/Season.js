@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 // import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
+// import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
@@ -13,7 +13,7 @@ import seasonMobileSVG from './../../images/season.svg';
 import seasonFullscreenSVG from './../../images/seasonFullscreen.svg';
 
 
-class Season extends Component {
+export default class Season extends Component {
     constructor() {
         super();
         
@@ -96,13 +96,3 @@ class Season extends Component {
                 </main>);
     }
 }
-
-function mapStateToProps(state) {
-    return {
-        dancers: state.dancers,
-        testing: state.testing,
-        loading: state.loading
-    }
-}
-
-export default connect(mapStateToProps, {})(Season);

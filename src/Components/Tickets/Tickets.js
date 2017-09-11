@@ -1,15 +1,14 @@
 import React, {Component} from 'react'
 // import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
-// import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
+import Checkout from './../Checkout/Checkout';
 import $ from 'jquery';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 
-class Tickets extends Component {
+export default class Tickets extends Component {
     constructor() {
         super();
         
@@ -26,12 +25,21 @@ class Tickets extends Component {
                 total: 0
             },
             currentLevel: '',
-            currentSeat: ''
+            currentSeat: '',
+            stripeKeyPublishable: '',
+            justPurchased: false
         }
+        this.checkoutNow = this.checkoutNow.bind(this);
     }
 
     componentWillMount() {
-        
+        axios.get(`${url()}/stripeKeyPub`)
+        .then( res => {
+                this.setState({
+                    stripeKeyPublishable: res.data.stripeKeyPublishable
+                });
+            }
+        )
     }
 
     componentWillReceiveProps(newProps) {
@@ -39,7 +47,8 @@ class Tickets extends Component {
             .then(res => {
                 this.setState({
                     performances: res.data.filter((e) => {if (e.name === newProps.showName) return e})
-                }) 
+                })
+                return res.data;
             });
         this.setState({
             showName: newProps.showName
@@ -417,8 +426,11 @@ class Tickets extends Component {
         }
     }
 
+    
     checkoutNow(){
-        alert(`Sorry, this is just the MVP of a class project. Upon completion, you will be able to use Stripe to 'pay', however, since this is a project, Stripe will remain in test mode and not actually collect data.`);
+        this.setState({
+            justPurchased: true
+        })
         let body = { action: 0, tickets: []};
         this.state.basket.seats.map(seat => {
             let {specific_performance_id, section, seat_row, num} = seat.thisSeatObj;
@@ -431,6 +443,12 @@ class Tickets extends Component {
                     basket: {total: 0, seats: []}
                 });
             });
+        setTimeout(() => {
+            this.setState({
+                justPurchased: false
+            })
+            this.showBasket(false);
+        }, 5000);
     }
 
     render() {
@@ -477,10 +495,13 @@ class Tickets extends Component {
                     <div className="ticketCheckout" >
                             <div>
                                 <h1>Basket</h1>
-                                <span>Total: ${this.state.basket.total}</span>
-                                <button disabled={this.state.basket.total === 0 ? true : false} 
-                                        style={{backgroundColor: this.state.basket.total === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}
-                                        onClick={() => this.checkoutNow()}>Checkout</button>
+                                <span>{this.state.justPurchased ? `Thank you for your purchase at Ballet SLC!` : `Total: $${this.state.basket.total}`}</span>
+                                <div style={{display: this.state.justPurchased ? 'none' : 'block'}}><Checkout className="checkoutStripe"
+                                          name={this.state.showName}
+                                          description={'Ballet SLC Tickets'}
+                                          amount={this.state.basket.total}
+                                          stripeKeyPublishable={this.state.stripeKeyPublishable}
+                                          checkoutNow={this.checkoutNow}/></div>
                                 <ul >
                                     {this.state.basket.seats.map((seat) =>{
                                         //seat = {thisSeatObj: {seat info}, target: target}
@@ -499,13 +520,3 @@ class Tickets extends Component {
                 </div>);
     }
 }
-
-function mapStateToProps(state) {
-    return {
-        dancers: state.dancers,
-        testing: state.testing,
-        loading: state.loading
-    }
-}
-
-export default connect(mapStateToProps, {})(Tickets);

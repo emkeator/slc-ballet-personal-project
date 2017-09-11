@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 // import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
+// import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
@@ -9,7 +9,7 @@ import axios from 'axios';
 import aboutMobileSVG from './../../images/about.svg';
 import aboutFullscreenSVG from './../../images/aboutFullscreen.svg';
 
-class About extends Component {
+export default class About extends Component {
     constructor() {
         super();
         
@@ -126,12 +126,12 @@ class About extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        dancers: state.dancers,
-        testing: state.testing,
-        loading: state.loading
-    }
-}
+// function mapStateToProps(state) {
+//     return {
+//         dancers: state.dancers,
+//         testing: state.testing,
+//         loading: state.loading
+//     }
+// }
 
-export default connect(mapStateToProps, {})(About);
+// export default connect(mapStateToProps, {})(About);

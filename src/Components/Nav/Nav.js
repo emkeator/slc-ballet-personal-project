@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
+// import {connect} from 'react-redux';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
 // import $ from 'jquery';
 
-class Nav extends Component {
+export default class Nav extends Component {
 
     constructor() {
         super();
@@ -41,8 +41,8 @@ class Nav extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {}
-}
+// function mapStateToProps(state) {
+//     return {}
+// }
 
-export default connect(mapStateToProps, {})(Nav);
+// export default connect(mapStateToProps, {})(Nav);

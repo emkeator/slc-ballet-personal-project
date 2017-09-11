@@ -5,11 +5,17 @@ const express = require('express'),
       cors = require('cors'),
       session = require('express-session'),
       massive = require('massive'),
-      app = express();
+      stripeKeyPublishable = process.env.PUBLISHABLE_KEY,
+      stripeKeySecret = process.env.SECRET_KEY,
+      app = express(),
+      stripe = require('stripe')(stripeKeySecret);
 
 
 app.use(bodyParser.json());
 app.use(cors());
+//using Stripe
+app.set('view engine', 'pug');
+app.use(bodyParser.urlencoded({extended: false}));
 
 massive({
   host: process.env.HEROKU_HOST,
@@ -60,16 +66,35 @@ app.patch('/api/performances/tickets/:showID/:section/:seat_row/:num/:action', (
 app.patch('/api/performances/tickets/updateMany', (req, res) => {
     let {tickets, action} = req.body;
     action = +action;
+    let response = [];
     tickets.map(e => {
         app.get('db').updateTicket(+e.specific_performance_id, e.section, e.seat_row, +e.num, action).then(ticket => {
-            res.status(200).send(ticket);
-        })
-    })
+            response.push(ticket);
+        });
+    });
+    res.status(200).send(response);
 })
 
-app.get('/api/theSecretLiesWithCharlotte', (req, res) => {
-    res.status(200).send({charlotte: process.env.GOOGLE_API_KEY});
-})
+//STRIPE API ENDPOINTS
+app.get("/stripeKeyPub", (req, res) => {
+    res.status(200).send({stripeKeyPublishable})
+});
+app.get("/stripe", (req, res) => {
+    res.status(200).send({stripeKeyPublishable})
+});
+
+const postStripeCharge = res => (stripeErr, stripeRes) => {
+  if (stripeErr) {
+    res.status(500).send({ error: stripeErr });
+  } else {
+    res.status(200).send({ success: stripeRes });
+  }
+}
+
+app.post("/stripe", (req, res) => {
+    console.log(res);
+    stripe.charges.create(req.body, postStripeCharge(res));
+});
 
 const myPort = 3005;
 app.listen(myPort, () => console.log(`I'm listening on port ` + myPort));

@@ -1,26 +1,37 @@
 import React, {Component} from 'react'
 // import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
+import Checkout from './../Checkout/Checkout';
 import $ from 'jquery';
 import axios from 'axios';
 import supportMobileSVG from './../../images/support.svg';
 import supportFullscreenSVG from './../../images/supportFullscreen.svg';
 
-class Support extends Component {
+export default class Support extends Component {
     constructor() {
         super();
         
         this.state = {
             emailEntry: '',
             nameEntry: '',
-            donationAmount: ''
+            donationAmount: '',
+            stripeKeyPublishable: '',
+            justDonated: false
         }
+        
+        this.donateNow = this.donateNow.bind(this);
     }
 
     componentWillMount() {
+        axios.get(`${url()}/stripeKeyPub`)
+        .then( res => {
+                this.setState({
+                    stripeKeyPublishable: res.data.stripeKeyPublishable
+                });
+            }
+        )
     }
 
     handleEmailInput(event) {
@@ -44,14 +55,24 @@ class Support extends Component {
         });
     }
 
-    donate() {
-        alert(`Thank you for your generous donation of $${this.state.donationAmount} to Ballet Salt Lake City! However, ${this.state.nameEntry}, this is only the minimum viable product of a class site. Upon completion, clicking 'Donate' will create a Stripe object, and you would be able to donate (however, since it will still be a class project, Stripe will remain permanently in test mode).`);
-        $('.thanks').show();
+    donateNow() {
+        this.setState({
+            justDonated: true
+        })
+        setTimeout(() => {
+            this.resetForm();
+        }, 5000);
+        
+    }
+
+    resetForm(){
         $('input').val('');
         $('.donationInput').val('');
-        setTimeout(() => {
-            $('.thanks').hide();
-        }, 5000);
+        $('.makeDonation').hide();
+        this.setState({
+            justDonated: false,
+            donationAmount: ''
+        });
     }
     
 
@@ -71,22 +92,29 @@ class Support extends Component {
                                 </div>
                                 <div>
                                     $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
-                                    <button onClick={() => this.donate()} type='button' style={{backgroundColor: this.state.donationAmount === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
+                                    <button onClick={() => $('.makeDonation').css('display', 'flex')} type='button' disabled={this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? true : false} style={{backgroundColor: this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
                                 </div>
-                                <p className="thanks">Thank you for your generous donation of ${this.state.donationAmount} to Ballet Salt Lake City.</p>
-                                {/*ADD STRIPE!!!!!!!  */}
                             </form>
                         </div>
                     </section>
+                    <div className="makeDonation">
+                        <section>
+                            <div className="stripeDonate">
+                                <p>{this.state.justDonated ? `Thank you, ${this.state.nameEntry}, for your generous gift of $${this.state.donationAmount} to Ballet SLC.` : `Make your donation of 
+                                                                                                                        $${this.state.donationAmount} today.`}</p>
+                                <div style={{display: this.state.justDonated ? 'none' : 'block'}}><Checkout className="checkoutStripe"
+                                    name={'Donation'}
+                                    description={'Ballet SLC'}
+                                    amount={this.state.donationAmount}
+                                    stripeKeyPublishable={this.state.stripeKeyPublishable}
+                                    checkoutNow={this.donateNow}/></div>
+                                <button onClick={() => this.resetForm()}>Return to Page</button>
+                            </div>
+                        </section>
+                    </div>
                     
                     
 
                 </main>);
     }
 }
-
-function mapStateToProps(state) {
-    return state
-}
-
-export default connect(mapStateToProps, {})(Support);

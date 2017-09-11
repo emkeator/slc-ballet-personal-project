@@ -16,13 +16,16 @@
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
     "pg": "^7.2.0",
+    "pug": "^2.0.0-rc.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",
+    "react-stripe-checkout": "^2.6.3",
     "redux": "^3.7.2",
-    "redux-promise-middleware": "^4.4.1"
+    "redux-promise-middleware": "^4.4.1",
+    "stripe": "^4.25.0"
   },
   "scripts": {
     "start-js": "PORT=3001 react-scripts start",

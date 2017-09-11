@@ -470,8 +470,6 @@ table {
       background-color: rgba(0, 0, 0, 0.8); }
     .supportPage .supportPageContainer p {
       padding: 10px; }
-    .supportPage .supportPageContainer .thanks {
-      display: none; }
     .supportPage .supportPageContainer form {
       margin-top: 50px;
       width: 270px;
@@ -511,6 +509,52 @@ table {
       .supportPage .supportPageContainer button:focus {
         outline: none; }
       .supportPage .supportPageContainer button:hover {
+        background-color: rgba(152, 93, 109, 0.85); }
+  .supportPage .makeDonation {
+    display: none;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center; }
+    .supportPage .makeDonation section {
+      width: 320px;
+      height: 400px;
+      background-color: #000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    .supportPage .makeDonation .stripeDonate {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    .supportPage .makeDonation p {
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      line-height: 1.4em;
+      font-family: "Playfair Display", serif !important;
+      font-size: 140%;
+      padding: 30px 20px; }
+    .supportPage .makeDonation button {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 90%;
+      margin: 20px 10px;
+      letter-spacing: 0.2em;
+      background-color: rgba(152, 135, 143, 0.85);
+      border: none;
+      padding: 7px; }
+      .supportPage .makeDonation button:focus {
+        outline: none; }
+      .supportPage .makeDonation button:hover {
         background-color: rgba(152, 93, 109, 0.85); }
 
 .supportPageHeaderContainer {
