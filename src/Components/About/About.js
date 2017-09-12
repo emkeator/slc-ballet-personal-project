@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import Nav from './../../Components/Nav/Nav';
 // import {Link} from 'react-router-dom';
 // import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
@@ -44,17 +45,17 @@ export default class About extends Component {
 
     subscribe() {
         if (this.state.nameEntry.toLowerCase().includes('alan')) {
-            alert(`Sorry, Alan Miller, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at alienStar@mothership.org.`);
+            alert(`Sorry, Alan Miller, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at alienStar@mothership.org.`);
         } else if (this.state.nameEntry.toLowerCase().includes('andi')) {
-            alert(`Sorry, Maggie Essence, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at meatGap@dogFacts.org.`);
+            alert(`Sorry, Maggie Essence, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at meatGap@dogFacts.org.`);
         } else if (this.state.nameEntry.toLowerCase().includes('marissa f')) {
-            alert(`Sorry, Princess Hackamore, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at makesTheBestSalsa@meatGapManor.org.`);
+            alert(`Sorry, Princess Hackamore, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at makesTheBestSalsa@meatGapManor.org.`);
         } else if (this.state.nameEntry.toLowerCase().includes('janise')) {
-            alert(`Sorry, Buddy Charlwood, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at thunderFromDownUnder@MorningMeat.org.`);
+            alert(`Sorry, Buddy Charlwood, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at thunderFromDownUnder@MorningMeat.org.`);
         } else if (this.state.nameEntry.toLowerCase().includes('andrew acuna')) {
-            alert(`Sorry, My Sun and Stars, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at juanSnow@tesla.org.`);
+            alert(`Sorry, My Sun and Stars, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at juanSnow@tesla.org.`);
         } else {
-            alert(`Sorry, ${this.state.nameEntry}, but this is just a class project site! If it were a real site, code attached to the subscribe button would send your information to our database via a backend call, and you would recieve an email at ${this.state.emailEntry}.`);
+            alert(`Sorry, ${this.state.nameEntry}, but this is just a class project site, and this ballet company does not actually exist! You will not receive any emails at ${this.state.emailEntry}.`);
         }
         $('input').val('');
     }
@@ -121,17 +122,7 @@ export default class About extends Component {
                             <span><button type="button" disabled={this.state.emailEntry.length === 0 ? true : false} onClick={() => this.subscribe()} style={{backgroundColor: this.state.emailEntry.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Subscribe</button></span>
                         </div>
                     </div>
-
+                    <Nav/>
                 </main>);
     }
 }
-
-// function mapStateToProps(state) {
-//     return {
-//         dancers: state.dancers,
-//         testing: state.testing,
-//         loading: state.loading
-//     }
-// }
-
-// export default connect(mapStateToProps, {})(About);

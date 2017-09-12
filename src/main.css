@@ -340,8 +340,7 @@ table {
     align-items: center;
     position: relative; }
     .ticketChooser div:hover {
-      background-color: rgba(152, 135, 143, 0.85);
-      transform: rotate3d(1.5, 1.5, -4, 166deg) scale(0.9); }
+      background-color: rgba(152, 135, 143, 0.85); }
     .ticketChooser div p {
       padding: 0;
       margin: 3px 3px; }
@@ -394,7 +393,7 @@ table {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 320px;
     background-color: #000; }
   .ticketCheckout h1 {
     width: 100%;
@@ -415,18 +414,25 @@ table {
     justify-content: space-around;
     align-content: center; }
     .ticketCheckout li span {
-      text-align: left;
-      width: 65%;
+      width: 60%;
       height: 40px;
-      padding: 5px; }
-  .ticketCheckout .seatPrice {
-    width: 35%;
-    padding-left: 10px; }
-    .ticketCheckout .seatPrice em {
-      font-size: 130%;
-      cursor: pointer; }
-      .ticketCheckout .seatPrice em:hover {
-        color: #985E6D; }
+      padding-left: 20px;
+      display: flex;
+      align-items: center; }
+    .ticketCheckout li .seatPrice {
+      width: 30%;
+      text-align: right !important;
+      padding: 0 10px 0 0 !important;
+      justify-content: flex-end; }
+    .ticketCheckout li .seatRemover {
+      padding: 0 !important;
+      width: 10%;
+      justify-content: center; }
+      .ticketCheckout li .seatRemover img {
+        height: 20px;
+        cursor: pointer; }
+        .ticketCheckout li .seatRemover img:hover {
+          color: #985E6D; }
   .ticketCheckout button {
     color: #fff;
     font-family: "Open Sans", sans-serif;

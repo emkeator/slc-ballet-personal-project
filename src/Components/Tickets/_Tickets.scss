@@ -147,9 +147,6 @@
         
         &:hover {
             background-color: $cloud-opaque-2;
-            transform: 
-                rotate3d(1.5, 1.5, -4, 166deg)
-                scale(0.9);
         }
         border-radius: 10px;
 
@@ -241,7 +238,7 @@
         align-items: center;
         justify-content: center;
 
-        width: 300px;
+        width: 320px;
         // min-height: 200px;
         background-color: $black;
 
@@ -274,27 +271,36 @@
         align-content: center;
 
         span {
-            text-align: left;
-            width: 65%;
+            width: 60%;
             height: 40px;
-            padding: 5px;
-            // display: flex;
-            // align-items: center;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
             // border: 1px red solid;
         }
-    }
 
-    .seatPrice {
-        width: 35%;
-        padding-left: 10px;
-        em {
-            font-size: 130%;
-            cursor: pointer;
-            &:hover {
-                color: $sunset;
+        .seatPrice {
+            width: 30%;
+            // padding-left: 10px;
+            text-align: right !important;
+            padding: 0 10px 0 0!important;
+            justify-content: flex-end;
+        }
+        .seatRemover {
+            padding: 0 !important;
+            width: 10%;
+            justify-content: center;
+            img {
+                height: 20px;
+                cursor: pointer;
+                &:hover {
+                    color: $sunset;
+                }
             }
         }
     }
+
+    
     button {
         color: $white;
         font: {

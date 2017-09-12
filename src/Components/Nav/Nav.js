@@ -9,11 +9,24 @@ export default class Nav extends Component {
     constructor() {
         super();
         this.state = {
-            menuOpen: false
+            menuOpen: false,
+            currentPath: ''
         }
         
     }
 
+    componentWillMount(){
+        if (this.props.path) {
+            this.setState({
+                currentPath: this.props.path
+            });
+        } else {
+            this.setState({
+                currentPath: ''
+            });
+        }
+    }
+ 
     toggleMenu() {
         let x = this.state.menuOpen ? false : true;
         this.setState({
@@ -23,8 +36,9 @@ export default class Nav extends Component {
     
 
     render() {
+        console.log(this.currentPath)
         return (<nav className="navMenu"> 
-                    <p className="menuToggle" style={{color: this.state.menuOpen ? 'white' : '#fff', 
+                    <p className="menuToggle" style={{color: this.state.currentPath === '/' ? '#000' : '#fff', 
                                                                         transform: this.state.menuOpen ? 'rotate(45deg)':'none'}}
                                                                 onClick={() => this.toggleMenu()}>+</p>
                     <div style={{top: this.state.menuOpen ? '-250px' : '-500px', right: this.state.menuOpen ? '-250px' : '-500px'}}>
@@ -40,9 +54,3 @@ export default class Nav extends Component {
                 </nav>);
     }
 }
-
-// function mapStateToProps(state) {
-//     return {}
-// }
-
-// export default connect(mapStateToProps, {})(Nav);

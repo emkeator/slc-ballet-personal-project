@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import Nav from './../../Components/Nav/Nav';
 // import {Link} from 'react-router-dom';
 // import {connect} from 'react-redux';
 // import {loadDancers} from './../../ducks/reducer';
@@ -91,7 +92,7 @@ export default class Season extends Component {
                         </div>
                     </div>
                     <div className="seasonPageContainer tickets"><Tickets showName={this.state.showName}/></div>
-                    
+                    <Nav />
 
                 </main>);
     }

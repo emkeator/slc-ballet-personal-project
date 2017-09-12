@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 // import {Link} from 'react-router-dom';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
@@ -6,6 +6,7 @@ import Checkout from './../Checkout/Checkout';
 import $ from 'jquery';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import removeIcon from './../../images/removeIcon.svg';
 
 
 export default class Tickets extends Component {
@@ -81,7 +82,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>          
                         })}</p>
@@ -89,7 +90,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -97,7 +98,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -105,7 +106,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -113,7 +114,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -121,7 +122,7 @@ export default class Tickets extends Component {
                             return <button className={`orchSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)} 
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -135,7 +136,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -143,7 +144,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -151,7 +152,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -159,7 +160,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -167,7 +168,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -175,7 +176,7 @@ export default class Tickets extends Component {
                             return <button className={`mezSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -189,7 +190,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -198,7 +199,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p><br/>
@@ -206,7 +207,7 @@ export default class Tickets extends Component {
                         return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                     })}</p>
@@ -215,7 +216,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -223,7 +224,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -231,7 +232,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -239,7 +240,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -247,7 +248,7 @@ export default class Tickets extends Component {
                             return <button className={`balcSeat seat${e.available === 2 ? ' onHold' : e.available > 0 ? ' available' : ''}`} key={e.id} onClick={(event) => {
                                     this.handleBasket(e, event.target)
                                 }}
-                                onMouseOver={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}
+                                onMouseOver={(event) => {if(this.state.currentLevel) this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, true)}}
                                 onMouseOut={(event) => this.showCurrentSeat(event, e.available, e.seat_row, e.num, e.price, false)}  
                                 disabled={e.available < 1}> </button>         
                         })}</p>
@@ -421,12 +422,12 @@ export default class Tickets extends Component {
     showBasket(showYesOrNo) {
         if(showYesOrNo) {
             $('.ticketCheckout').css('display', 'flex');
+            alert(`THIS IS A CLASS PROJECT SITE. This ballet company does not actually exist, and any 'checkout' procedures from here on use Stripe in test mode. Use Stripe's test credit card, 4242 4242 4242 4242, with any future date as expiration and any 3 numbers as the CVC. No actual charge will be made, but please do not use your real credit card!`);
         } else {
             $('.ticketCheckout').hide();
         }
     }
 
-    
     checkoutNow(){
         this.setState({
             justPurchased: true
@@ -508,7 +509,8 @@ export default class Tickets extends Component {
                                         return(
                                             <li key={seat.thisSeatObj.id}>
                                                 <span>{`${seat.thisSeatObj.section[0].toUpperCase() + seat.thisSeatObj.section.slice(1)} ${seat.thisSeatObj.seat_row}${seat.thisSeatObj.num}`}</span>
-                                                <span className="seatPrice">{`$${seat.thisSeatObj.price}`}  <em onClick={() => this.handleBasket(seat.thisSeatObj, seat.target)}>☒</em></span>                                            
+                                                <span className="seatPrice">{`$${seat.thisSeatObj.price}`}</span>
+                                                <span className="seatRemover"><img src={removeIcon} alt="remove" onClick={() => this.handleBasket(seat.thisSeatObj, seat.target)}/></span>                                            
                                             </li>
                                         )
                                     })}

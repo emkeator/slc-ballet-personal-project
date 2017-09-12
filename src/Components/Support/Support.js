@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import Nav from './../../Components/Nav/Nav';
 // import {Link} from 'react-router-dom';
 // import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
@@ -77,6 +78,7 @@ export default class Support extends Component {
     
 
     render() {
+        console.log(this.props);
         return (<main className="supportPage">
                     <div className="supportPageHeaderContainer">
                         <img src={supportMobileSVG} alt="Ballet Salt Lake City support" className="mobileHeader"/>
@@ -92,7 +94,10 @@ export default class Support extends Component {
                                 </div>
                                 <div>
                                     $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
-                                    <button onClick={() => $('.makeDonation').css('display', 'flex')} type='button' disabled={this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? true : false} style={{backgroundColor: this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
+                                    <button onClick={() => {
+                                            $('.makeDonation').css('display', 'flex');
+                                            alert(`THIS IS A CLASS PROJECT SITE. This ballet company does not actually exist, and any 'checkout' procedures from here on use Stripe in test mode. Use Stripe's test credit card, 4242 4242 4242 4242, with any future date as expiration and any 3 numbers as the CVC. No actual charge will be made, but please do not use your real credit card! ** Also, you will not recieve an email at your given address.`);
+                                        }} type='button' disabled={this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? true : false} style={{backgroundColor: this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
                                 </div>
                             </form>
                         </div>
@@ -100,7 +105,7 @@ export default class Support extends Component {
                     <div className="makeDonation">
                         <section>
                             <div className="stripeDonate">
-                                <p>{this.state.justDonated ? `Thank you, ${this.state.nameEntry}, for your generous gift of $${this.state.donationAmount} to Ballet SLC.` : `Make your donation of 
+                                <p>{this.state.justDonated ? `Thank you${this.state.nameEntry.length > 0 ? ', ' + this.state.nameEntry +', ' : ' '}for your generous gift of $${this.state.donationAmount} to Ballet SLC.` : `Make your donation of 
                                                                                                                         $${this.state.donationAmount} today.`}</p>
                                 <div style={{display: this.state.justDonated ? 'none' : 'block'}}><Checkout className="checkoutStripe"
                                     name={'Donation'}
@@ -114,7 +119,7 @@ export default class Support extends Component {
                     </div>
                     
                     
-
+                    <Nav/>
                 </main>);
     }
 }

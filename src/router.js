@@ -4,12 +4,13 @@ import Home from './Components/Home/Home';
 import Season from './Components/Season/Season';
 import Support from './Components/Support/Support';
 import About from './Components/About/About';
+import Nav from './Components/Nav/Nav';
 
 export default (
     <Switch>
         <Route path='/' exact component={Home}/>
-        <Route path='/season' exact component={Season}/>      
-        <Route path='/support' exact component={Support}/>                                                        
-        <Route path='/about' exact component={About}/>                                      
+        <Route path='/season' component={Season}/>      
+        <Route path='/support' component={Support}/>                                                        
+        <Route path='/about' component={About}/>                                             
     </Switch>
 );
