@@ -24,9 +24,6 @@
         padding: 50px 0;
     }
 
-    .containDancers {
-        padding: 10vw 10vw 10vw 10vw;
-    }
 }
 
 .aboutPageHeaderContainer {
@@ -51,6 +48,7 @@
     line-height: 1.2em;
     letter-spacing: 0.25em;
     overflow: scroll;
+    margin-bottom: 70px;
 }
 
 .dancersHeader {
@@ -148,7 +146,10 @@
     }
     h2 {
         width: 100vw;
-        font-size: 1.5rem;
+        font: {
+            size: 1.5rem;
+            family: $sansFont;
+        }
         margin-bottom: 20px;
     }
 
@@ -160,6 +161,7 @@
         &:hover {
             color: $sunset;
         }
+        // border: 1px solid red;
     }
 
     input {
@@ -214,9 +216,6 @@
 }
 
 @media (min-width: 550px){
-    .containDancers {
-        padding: 10vw 40vw 10vw 10vw;
-    }
 
     .aboutPageCompany {
         padding: 10px 20px;
@@ -229,22 +228,24 @@
         span {
             width: 33vw;
             margin-bottom: 0px;
+            // border: 1px solid red;
         }
-        .contactAlignLeft {
-            text-align: left;
+        .widthCenter {
+            width: 150px;
+        }
+        .widthSides {
+            width: calc((100vw - 150px) / 2);
         }
         .contactAlignRight {
             text-align: right;
+        }
+        .contactAlignLeft {
+            text-align: left;
         }
     }
 }
 
 @media (min-width: 750px) {
-    .aboutPage {
-        .containDancers {
-            padding: 10vw 40vw 10vw 10vw;
-        }
-    }
 
     .aboutPageBallet {
         padding: 40px 40px;
@@ -273,7 +274,6 @@
 
     .contact {
         font: {
-            family: $serifFont;
             size: 0.8rem;
         }
         h2 {
@@ -281,18 +281,13 @@
         }
 
         input {
-            width: 150px;
-            height: 25px;
-            padding-left: 7px;
             font: {
-                family: $sansFont;
                 size: 80%;
             }
         }
 
         button {
             font: {
-                family: $sansFont;
                 size: 90%;
             }
         }

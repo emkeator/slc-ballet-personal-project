@@ -5,7 +5,7 @@
 .ticketsPage {
     background-color: $black-opaque-2;
     width: 320px;
-    min-height: 500px;
+    min-height: 810px;
     // border: 1px solid red;
     padding: 30px 0px;
     margin: 10px 0;
@@ -110,7 +110,12 @@
 }
 
 .ticketChooser {
-    border: 1px solid $cloud;
+    border: {
+        top: 1px solid $cloud;
+        bottom: 1px solid $cloud;
+        left: none;
+        right: none;
+    }
     overflow: scroll;
     display: flex;
     flex-wrap: wrap;

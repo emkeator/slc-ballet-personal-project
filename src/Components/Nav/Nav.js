@@ -14,7 +14,7 @@ export default class Nav extends Component {
         
     }
 
-    componentWillUpdate(){
+    componentDidMount(){
         if (window.location.hash === '#/') {
             TweenMax.to($('.menuToggle'), 0.01, {color: '#000'})
         } else {
@@ -22,10 +22,11 @@ export default class Nav extends Component {
         }
     }
 
-    componentWillUnmount() {
-        if(this.state.menuOpen) {
-            TweenMax.to($('.navMenu div'), 0.05, {top: '-500px', right: '-500px', delay: 2})
-            TweenMax.to($('.navMenu div'), 1.5, {opacity:'0'});
+    componentDidUpdate(){
+        if (window.location.hash === '#/') {
+            TweenMax.to($('.menuToggle'), 0.01, {color: '#000'})
+        } else {
+            TweenMax.to($('.menuToggle'), 0.01, {color: '#fff'})
         }
     }
  
@@ -75,15 +76,27 @@ export default class Nav extends Component {
         }
     }
 
+    changePage(e) {
+        e.preventDefault();
+        // this.props.coverPage(window.location.hash.slice(1))
+        let goTo = e.target.getAttribute('href');
+        this.props.coverPage(goTo.slice(1));
+        this.props.unCoverPage(goTo.slice(1));        
+        console.log(goTo)
+        setTimeout(function(){
+            window.location = goTo;
+        }, 1300);
+    }
+
     render() {
         return (<nav className="navMenu"> 
                     <p className="menuToggle" onMouseOver={(e) => this.hoverColor(e, true)} onMouseOut={(e) => this.hoverColor(e, false)} onClick={() => this.toggleMenu()}>+</p>
                     <div >
                         <ul>
-                            <li className="navItem"><Link onClick={() => this.hideMenu()} to="/" className="navLink">Home</Link></li>
-                            <li className="navItem"><Link onClick={() => this.hideMenu()} to="/season" className="navLink">Season</Link></li>
-                            <li className="navItem"><Link onClick={() => this.hideMenu()} to="/support" className="navLink">Support</Link></li>
-                            <li className="navItem"><Link onClick={() => this.hideMenu()} to="/about" className="navLink">About</Link></li>
+                            <li className="navItem"><Link onClick={(e) => {this.hideMenu(); this.changePage(e);}} to="/" className="navLink">Home</Link></li>
+                            <li className="navItem"><Link onClick={(e) => {this.hideMenu(); this.changePage(e);}} to="/season" className="navLink">Season</Link></li>
+                            <li className="navItem"><Link onClick={(e) => {this.hideMenu(); this.changePage(e);}} to="/support" className="navLink">Support</Link></li>
+                            <li className="navItem"><Link onClick={(e) => {this.hideMenu(); this.changePage(e);}} to="/about" className="navLink">About</Link></li>
                         </ul>
                     </div>
                     

@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import Nav from './../../Components/Nav/Nav';
-// import {Link} from 'react-router-dom';
-// import {connect} from 'react-redux';
-// import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
 import $ from 'jquery';
@@ -77,9 +74,7 @@ export default class About extends Component {
                             Lake. Ballet SLC is committed to promoting ceative excellence and nurturing a new generation 
                             of dancers and choreographers. 
                         </p>
-                    </div>
-                    
-                    <div className="aboutPageContainer containDancers">
+                        
                         <div className="aboutPageCompany">
                             <h1>company</h1>
                             <div>
@@ -111,18 +106,17 @@ export default class About extends Component {
                     <div className="contact">
                         <div>
                             <h2>contact</h2>
-                            <span>801-555-5555</span>
+                            <span className="contactAlignRight">801-555-5555</span>
                             <span>inqueries@slcb.org</span>
-                            <span>973 S Temple, SLC</span>
+                            <span className="contactAlignLeft">973 S Temple, SLC</span>
                         </div>
-                        <div>
-                            <span className="contactAlignRight">subscribe:</span>
-                            <span><input placeholder="Name" className="inputFirst" onChange={(event) => this.handleNameInput(event)}></input></span>
-                            <span className="contactAlignLeft"><input placeholder="Email" onChange={(event) => this.handleEmailInput(event)}></input></span>
+                        <div className="subscribeDiv">
+                            <span className="contactAlignRight widthSides">subscribe:</span>
+                            <span className="contactAlignCenter widthCenter"><input placeholder="Name" className="inputFirst" onChange={(event) => this.handleNameInput(event)}></input></span>
+                            <span className="contactAlignLeft widthSides"><input placeholder="Email" onChange={(event) => this.handleEmailInput(event)}></input></span>
                             <span><button type="button" disabled={this.state.emailEntry.length === 0 ? true : false} onClick={() => this.subscribe()} style={{backgroundColor: this.state.emailEntry.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Subscribe</button></span>
                         </div>
                     </div>
-                    {/* <Nav/> */}
                 </main>);
     }
 }

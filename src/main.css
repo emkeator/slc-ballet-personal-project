@@ -142,7 +142,8 @@ table {
   left: 0;
   height: calc(150px - 10px);
   background-color: rgba(255, 255, 255, 0.35);
-  display: block; }
+  display: block;
+  opacity: 0; }
 
 @media (min-width: 450px) {
   .behindLogo {
@@ -188,7 +189,7 @@ table {
 .season {
   background-color: rgba(0, 0, 0, 0.8);
   width: 290px;
-  min-height: 500px;
+  min-height: 810px;
   padding: 30px 20px;
   margin: 10px 0; }
   .season h2 {
@@ -235,7 +236,7 @@ table {
 .ticketsPage {
   background-color: rgba(0, 0, 0, 0.8);
   width: 320px;
-  min-height: 500px;
+  min-height: 810px;
   padding: 30px 0px;
   margin: 10px 0;
   overflow: scroll;
@@ -308,7 +309,10 @@ table {
       background-color: rgba(152, 93, 109, 0.85); }
 
 .ticketChooser {
-  border: 1px solid #98878F;
+  border-top: 1px solid #98878F;
+  border-bottom: 1px solid #98878F;
+  border-left: none;
+  border-right: none;
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -610,8 +614,6 @@ table {
     justify-content: center;
     align-items: center;
     padding: 50px 0; }
-  .aboutPage .containDancers {
-    padding: 10vw 10vw 10vw 10vw; }
 
 .aboutPageHeaderContainer {
   width: 100vw;
@@ -629,7 +631,8 @@ table {
   text-align: center;
   line-height: 1.2em;
   letter-spacing: 0.25em;
-  overflow: scroll; }
+  overflow: scroll;
+  margin-bottom: 70px; }
 
 .dancersHeader {
   width: 100vw;
@@ -699,6 +702,7 @@ table {
   .contact h2 {
     width: 100vw;
     font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 20px; }
   .contact span {
     margin-bottom: 10px;
@@ -742,8 +746,6 @@ table {
     text-align: center; }
 
 @media (min-width: 550px) {
-  .containDancers {
-    padding: 10vw 40vw 10vw 10vw; }
   .aboutPageCompany {
     padding: 10px 20px; }
     .aboutPageCompany div {
@@ -751,14 +753,16 @@ table {
   .contact span {
     width: 33vw;
     margin-bottom: 0px; }
-  .contact .contactAlignLeft {
-    text-align: left; }
+  .contact .widthCenter {
+    width: 150px; }
+  .contact .widthSides {
+    width: calc((100vw - 150px) / 2); }
   .contact .contactAlignRight {
-    text-align: right; } }
+    text-align: right; }
+  .contact .contactAlignLeft {
+    text-align: left; } }
 
 @media (min-width: 750px) {
-  .aboutPage .containDancers {
-    padding: 10vw 40vw 10vw 10vw; }
   .aboutPageBallet {
     padding: 40px 40px;
     font-size: 110%;
@@ -777,18 +781,12 @@ table {
     .aboutPageCompany li {
       margin: 5px; }
   .contact {
-    font-family: "Playfair Display", serif;
     font-size: 0.8rem; }
     .contact h2 {
       font-size: 1.5rem; }
     .contact input {
-      width: 150px;
-      height: 25px;
-      padding-left: 7px;
-      font-family: "Open Sans", sans-serif;
       font-size: 80%; }
     .contact button {
-      font-family: "Open Sans", sans-serif;
       font-size: 90%; } }
 
 @media (min-width: 850) {
@@ -855,6 +853,36 @@ table {
 @media (min-width: 1200px) {
   .supportPage {
     background-image: url("./images/supportBGFullscreen.jpeg"); } }
+
+.overAll {
+  position: fixed;
+  background-color: black;
+  opacity: 1;
+  z-index: 5; }
+
+#overAllTopLeft {
+  width: 50vw;
+  height: 50vh;
+  top: 0vh;
+  left: 0vw; }
+
+#overAllTopRight {
+  width: 50vw;
+  height: 50vh;
+  top: 0vh;
+  left: 50vw; }
+
+#overAllBottomLeft {
+  width: 50vw;
+  height: 50vh;
+  top: 50vh;
+  left: 0vw; }
+
+#overAllBottomRight {
+  width: 50vw;
+  height: 50vh;
+  top: 50vh;
+  left: 50vw; }
 
 .mobileHeader {
   width: 100vw;

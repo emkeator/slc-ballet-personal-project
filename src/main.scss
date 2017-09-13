@@ -20,6 +20,54 @@
 @include season-page-bg-image();
 @include support-page-bg-image();
 
+
+// #overAll {
+//     width: 300vw;
+//     height: 300vh;
+//     // border-radius: 50%;
+//     position: fixed;
+//     top: -150vh;
+//     // right: -150vw;
+//     background-color: black;
+//     opacity: 1;
+//     z-index: 5;
+// }
+
+.overAll {
+    position: fixed;
+    background-color: black;
+    opacity: 1;
+    z-index: 5;
+}
+#overAllTopLeft{
+    width: 50vw;
+    height: 50vh;
+
+    top: 0vh;
+    left: 0vw;
+}
+#overAllTopRight {
+    width: 50vw;
+    height: 50vh;
+
+    top: 0vh;
+    left: 50vw;
+}
+#overAllBottomLeft {
+    width: 50vw;
+    height: 50vh;
+
+    top: 50vh;
+    left: 0vw;
+}
+#overAllBottomRight{
+    width: 50vw;
+    height: 50vh;
+
+    top: 50vh;
+    left: 50vw;
+}
+
 .mobileHeader {
     width: 100vw;
     display: block;
