@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import Nav from './../../Components/Nav/Nav';
-// import {Link} from 'react-router-dom';
-// import {loadDancers} from './../../ducks/reducer';
 import {url} from './../../ducks/apiGetter';
 // import TweenLite from './../../libs/greensock_minified/TweenLite.min';
 import Checkout from './../Checkout/Checkout';
@@ -78,7 +75,6 @@ export default class Support extends Component {
     
 
     render() {
-        console.log(this.props);
         return (<main className="supportPage">
                     <div className="supportPageHeaderContainer">
                         <img src={supportMobileSVG} alt="Ballet Salt Lake City support" className="mobileHeader"/>
@@ -117,9 +113,6 @@ export default class Support extends Component {
                             </div>
                         </section>
                     </div>
-                    
-                    
-                    <Nav/>
                 </main>);
     }
 }

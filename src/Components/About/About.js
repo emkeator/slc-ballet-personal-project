@@ -122,7 +122,7 @@ export default class About extends Component {
                             <span><button type="button" disabled={this.state.emailEntry.length === 0 ? true : false} onClick={() => this.subscribe()} style={{backgroundColor: this.state.emailEntry.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Subscribe</button></span>
                         </div>
                     </div>
-                    <Nav/>
+                    {/* <Nav/> */}
                 </main>);
     }
 }

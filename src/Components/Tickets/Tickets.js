@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import {Link} from 'react-router-dom';
 import {url} from './../../ducks/apiGetter';
-// import TweenLite from './../../libs/greensock_minified/TweenLite.min';
+import TweenMax from 'gsap';
 import Checkout from './../Checkout/Checkout';
 import $ from 'jquery';
 import {Link} from 'react-router-dom';
