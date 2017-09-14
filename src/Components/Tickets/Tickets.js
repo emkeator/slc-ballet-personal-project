@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
 import {url} from './../../ducks/apiGetter';
 import TweenMax from 'gsap';
 import Checkout from './../Checkout/Checkout';
@@ -421,10 +420,10 @@ export default class Tickets extends Component {
 
     showBasket(showYesOrNo) {
         if(showYesOrNo) {
-            $('.ticketCheckout').css('display', 'flex');
+            TweenMax.to($('.ticketCheckout'), 1.2, {display: 'flex', opacity: '1', scale: '1', ease: TweenMax.Power1.easeInOut});
             alert(`THIS IS A CLASS PROJECT SITE. This ballet company does not actually exist, and any 'checkout' procedures from here on use Stripe in test mode. Use Stripe's test credit card, 4242 4242 4242 4242, with any future date as expiration and any 3 numbers as the CVC. No actual charge will be made, but please do not use your real credit card!`);
         } else {
-            $('.ticketCheckout').hide();
+            TweenMax.to($('.ticketCheckout'), 1.2, {display: 'none', opacity: '0', scale: '0.01', ease: TweenMax.Power1.easeInOut});
         }
     }
 

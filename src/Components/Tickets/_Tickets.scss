@@ -226,7 +226,8 @@
 // style={{display: this.state.basketToggle ? 'block' : 'none'}}
 .ticketCheckout {
     display: none;
-
+    opacity: 0;
+    transform: scale(0.01);
     width: 100vw;
     height: 100vh;
     background-color: $black-opaque-2;

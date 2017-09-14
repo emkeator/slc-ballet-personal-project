@@ -385,6 +385,8 @@ table {
 
 .ticketCheckout {
   display: none;
+  opacity: 0;
+  transform: scale(0.01);
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
@@ -523,6 +525,8 @@ table {
         background-color: rgba(152, 93, 109, 0.85); }
   .supportPage .makeDonation {
     display: none;
+    opacity: 0;
+    transform: scale(0.01);
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
@@ -626,7 +630,7 @@ table {
   padding: 30px 20px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 85%;
   text-align: center;
   line-height: 1.2em;
@@ -634,22 +638,8 @@ table {
   overflow: scroll;
   margin-bottom: 70px; }
 
-.dancersHeader {
-  width: 100vw;
-  height: 50px;
-  background-color: rgba(25, 34, 49, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.2em;
-  color: #fff; }
-
 .aboutPageCompany {
-  width: 100vw;
+  width: 300px;
   padding: 30px 50px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -703,6 +693,7 @@ table {
     width: 100vw;
     font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.4em;
     margin-bottom: 20px; }
   .contact span {
     margin-bottom: 10px;
@@ -747,6 +738,7 @@ table {
 
 @media (min-width: 550px) {
   .aboutPageCompany {
+    width: 500px;
     padding: 10px 20px; }
     .aboutPageCompany div {
       width: 33vw; }
@@ -763,14 +755,13 @@ table {
     text-align: left; } }
 
 @media (min-width: 750px) {
+  .aboutPage .aboutPageContainer {
+    padding: 50px 10vw;
+    justify-content: flex-start; }
   .aboutPageBallet {
     padding: 40px 40px;
     font-size: 110%;
     width: 80vw; }
-  .dancersHeader {
-    width: 500px;
-    height: 100px;
-    font-size: 3rem; }
   .aboutPageCompany {
     width: 500px;
     padding: 30px 50px;

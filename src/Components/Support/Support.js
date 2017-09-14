@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {url} from './../../ducks/apiGetter';
-// import TweenLite from './../../libs/greensock_minified/TweenLite.min';
+import TweenMax from 'gsap';
 import Checkout from './../Checkout/Checkout';
 import $ from 'jquery';
 import axios from 'axios';
@@ -64,9 +64,9 @@ export default class Support extends Component {
     }
 
     resetForm(){
+        TweenMax.to($('.makeDonation'), 1.2, {display: 'none', opacity: '0', scale: '0.01', ease: TweenMax.Power1.easeInOut});
         $('input').val('');
         $('.donationInput').val('');
-        $('.makeDonation').hide();
         this.setState({
             justDonated: false,
             donationAmount: ''
@@ -91,7 +91,7 @@ export default class Support extends Component {
                                 <div>
                                     $<input className="donationInput" placeholder="Gift" onChange={(e) => this.handleDonationInput(e)}></input>
                                     <button onClick={() => {
-                                            $('.makeDonation').css('display', 'flex');
+                                            TweenMax.to($('.makeDonation'), 1.2, {display: 'flex', opacity: '1', scale: '1', ease: TweenMax.Power1.easeInOut});
                                             alert(`THIS IS A CLASS PROJECT SITE. This ballet company does not actually exist, and any 'checkout' procedures from here on use Stripe in test mode. Use Stripe's test credit card, 4242 4242 4242 4242, with any future date as expiration and any 3 numbers as the CVC. No actual charge will be made, but please do not use your real credit card! ** Also, you will not recieve an email at your given address.`);
                                         }} type='button' disabled={this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? true : false} style={{backgroundColor: this.state.donationAmount === 0 || this.state.donationAmount.length === 0 ? '#606060': 'rgba(152, 135, 143, 0.85)'}}>Donate</button>
                                 </div>
