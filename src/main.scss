@@ -85,17 +85,17 @@
 }
 
 .mobileHeader {
-    width: calc(100vw + 6px);
+    width: calc(100vw + 10px);
     display: block;
-    position: absolute;
-    left: -3px;
+    position: relative;
+    left: 0px;
 }
 
 .fullscreenHeader {
-    width: calc(100vw + 6px);
+    width: calc(100vw + 10px);
     display: none;
     position: relative;
-    left: -3px;
+    left: 0px;
 }
 
 @media (min-width: 650px) {
