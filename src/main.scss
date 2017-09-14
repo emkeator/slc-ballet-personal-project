@@ -38,13 +38,27 @@
     background-color: black;
     opacity: 1;
     z-index: 5;
+
+    overflow: hidden;
+
+    img {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+    }
 }
+
 #overAllTopLeft{
     width: 50vw;
     height: 50vh;
 
     top: 0vh;
     left: 0vw;
+
+    img {
+        bottom: -150px;
+        right: -150px;
+    }
 }
 #overAllTopRight {
     width: 50vw;
@@ -52,6 +66,11 @@
 
     top: 0vh;
     left: 50vw;
+
+    img {
+        bottom: -150px;
+        left: -150px;
+    }
 }
 #overAllBottomLeft {
     width: 50vw;
@@ -59,6 +78,11 @@
 
     top: 50vh;
     left: 0vw;
+
+    img {
+        top: -150px;
+        right: -150px;
+    }
 }
 #overAllBottomRight{
     width: 50vw;
@@ -66,6 +90,11 @@
 
     top: 50vh;
     left: 50vw;
+
+    img {
+        top: -150px;
+        left: -150px;
+    }
 }
 
 .mobileHeader {

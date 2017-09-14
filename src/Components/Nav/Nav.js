@@ -78,9 +78,9 @@ export default class Nav extends Component {
 
     changePage(e) {
         e.preventDefault();
-        // this.props.coverPage(window.location.hash.slice(1))
+        this.props.coverPage(window.location.hash.slice(1))
         let goTo = e.target.getAttribute('href');
-        this.props.coverPage(goTo.slice(1));
+        // this.props.coverPage(goTo.slice(1));
         this.props.unCoverPage(goTo.slice(1));        
         console.log(goTo)
         setTimeout(function(){

@@ -89,9 +89,11 @@ export default class Season extends Component {
                                 }
                             })}</ul>
                         </div>
+                    
+                        <div className="tickets">
+                            <Tickets showName={this.state.showName}/>
+                        </div>
                     </div>
-                    <div className="seasonPageContainer tickets"><Tickets showName={this.state.showName}/></div>
-
                 </main>);
     }
 }

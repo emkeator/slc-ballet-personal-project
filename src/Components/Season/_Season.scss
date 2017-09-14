@@ -26,7 +26,7 @@
         flex-wrap: wrap;
         // flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
     
 }
@@ -34,7 +34,7 @@
 .season {
     background-color: $black-opaque-2;
     width: 290px;
-    min-height: 810px;
+    min-height: 815px;
     // border: 1px solid red;
     padding: 30px 20px;
     margin: 10px 0;
@@ -89,6 +89,16 @@
 
 }
 
+.tickets {
+    // border: {
+    //     left:20px solid $black-opaque-2;
+    //     right:20px solid $black-opaque-2;
+    //     bottom: none;
+    //     top: none        
+    // }
+    padding: 0 20px;
+}
+
 .seasonPageHeaderContainer {
     width: 100vw;
 
@@ -100,7 +110,7 @@
 @media(min-width: 600px) {
     .seasonPage {
         .seasonPageContainer {
-            width: 50vw;
+            // width: 50vw;
         }
     }
 }

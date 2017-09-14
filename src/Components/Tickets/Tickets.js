@@ -42,6 +42,17 @@ export default class Tickets extends Component {
         )
     }
 
+    componentDidMount() {
+        $('.balcony').css('transform', 'none');
+        TweenMax.to($('.balcony'), 1, {top: '-190px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
+        
+        $('.mezzanine').css('transform', 'none');
+        TweenMax.to($('.mezzanine'), 1, {top: '10px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
+
+        $('.orchestra').css('transform', 'none');
+        TweenMax.to($('.orchestra'), 1, {top: '210px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
+    }
+
     componentWillReceiveProps(newProps) {
         axios.get(`${url()}/api/performances`)
             .then(res => {
@@ -279,18 +290,15 @@ export default class Tickets extends Component {
         this.setState({
             currentLevel: ''
         });
+        
         $('.balcony').css('transform', 'none');
-        $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
+        TweenMax.to($('.balcony'), 1, {top: '-190px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
         
         $('.mezzanine').css('transform', 'none');
-        $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
-        
+        TweenMax.to($('.mezzanine'), 1, {top: '10px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
+
         $('.orchestra').css('transform', 'none');
-        $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.8)');
-        
-        $('.balcony').css('top', '-200px');
-        $('.mezzanine').css('top', '0px');                
-        $('.orchestra').css('top', '200px');
+        TweenMax.to($('.orchestra'), 1, {top: '210px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.8, ease: TweenMax.Power1.easeInOut});
     }
 
     highlightSection(event) {
@@ -298,87 +306,66 @@ export default class Tickets extends Component {
         event.stopPropagation();
         let target = event.target.classList[0];
         
-        this.resetLevels()
+        
         switch (target) {
             case ('balcony'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'balcony'
                 });
-                $('.balcony').css('top', '-220px');
-                $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.mezzanine').css('top', '50px');
-                $('.orchestra').css('top', '250px');
-
-                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-220px', scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '60px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '270px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
                 break;
+
             case ('balcSeat'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'balcony'
                 });
-                $('.balcony').css('top', '-220px');
-                $('.balcony').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.mezzanine').css('top', '50px');
-                $('.orchestra').css('top', '250px');
-
-                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-220px', scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '60px',scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '270px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
                 break;
 
             case ('mezzanine'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'mezzanine'
                 });
-                $('.mezzanine').css('top', '20px');
-                $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.balcony').css('top', '-250px');
-                $('.orchestra').css('top', '290px');
-
-                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-250px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '30px',scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '310px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
                 break;
+
             case ('mezSeat'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'mezzanine'
                 });
-                $('.mezzanine').css('top', '20px');
-                $('.mezzanine').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.balcony').css('top', '-250px');
-                $('.orchestra').css('top', '290px');
-
-                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.orchestra').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-250px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '30px',scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '310px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
                 break;
 
             case ('orchestra'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'orchestra'
                 });
-                $('.orchestra').css('top', '220px');
-                $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.balcony').css('top', '-250px');
-                $('.mezzanine').css('top', '-50px');
-
-                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-250px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '-50px',scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '230px', scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
                 break;
+
             case ('orchSeat'):
+                this.resetLevels();
                 this.setState({
                     currentLevel: 'orchestra'
                 });
-                $('.orchestra').css('top', '220px');
-                $('.orchestra').css('transform', 'rotate3d(0, 0, -1, 180deg) scale(0.9)');
-
-                $('.balcony').css('top', '-250px');
-                $('.mezzanine').css('top', '-50px');
-
-                $('.balcony').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
-                $('.mezzanine').css('transform', 'rotate3d(1.5, 1.5, -4, 166deg) scale(0.7)');
+                TweenMax.to($('.balcony'), 1, {top: '-250px', scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.mezzanine'), 1, {top: '-50px',scaleY: -1, rotationX: -55, rotationY: 150, rotationZ: 0, scale: 0.7, ease: TweenMax.Power1.easeInOut});
+                TweenMax.to($('.orchestra'), 1, {top: '230px', scaleY: -1, rotationX: 0, rotationY: 150, rotationZ: 0, scale: 0.9, ease: TweenMax.Power1.easeInOut});
                 break;
 
             default: 
@@ -481,10 +468,11 @@ export default class Tickets extends Component {
                         <h2>Select Seats</h2>
                         <span id="levelSpan">{this.state.currentLevel}</span>
                         <span id="seatSpan">{this.state.currentSeat}</span> 
-                        {this.formatSeating('orchestra')}
-                        {this.formatSeating('mezzanine')}
-                        {this.formatSeating('balcony')}
-                        
+                        <section>
+                            {this.formatSeating('orchestra')}
+                            {this.formatSeating('mezzanine')}
+                            {this.formatSeating('balcony')}
+                        </section>
                         <span id="stageSpan">stage</span>
                                                
                     </div>

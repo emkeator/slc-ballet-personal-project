@@ -4,6 +4,7 @@ import Nav from './Components/Nav/Nav';
 import router from './router';
 import TweenMax from 'gsap';
 import $ from 'jquery';
+import ballerina from './images/balletBack.jpg';
 
 class App extends Component {
 
@@ -57,25 +58,25 @@ class App extends Component {
 
   unCover(pageName) {
     switch(pageName){
-        case('/'):
+        case('/about'):
             TweenMax.to($('#overAllTopLeft'), 1.2, { top: '-100vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllTopRight'), 1.2, { top: '100vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomLeft'), 1.2, { top: '-50vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomRight'), 1.2, { top: '150vh', delay: '1.35', ease: TweenMax.Power1.easeIn }); 
             break;
-        case('/season'):
+        case('/support'):
             TweenMax.to($('#overAllTopLeft'), 1.2, { left: '-100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllTopRight'), 1.2, { left: '-50vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomRight'), 1.2, { left: '150vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
             break;
-        case('/support'):
+        case('/season'):
             TweenMax.to($('#overAllTopLeft'), 1.2, { left: '100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllTopRight'), 1.2, { left: '150vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '-100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomRight'), 1.2, { left: '-50vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
             break;
-        case('/about'):
+        case('/'):
             TweenMax.to($('#overAllTopLeft'), 1.2, { top: '100vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllTopRight'), 1.2, { top: '-100vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
             TweenMax.to($('#overAllBottomLeft'), 1.2, { top: '150vh', delay: '1.35', ease: TweenMax.Power1.easeIn });
@@ -87,34 +88,14 @@ class App extends Component {
     }
   }
 
-  resetOverAll(page){
-      switch(page) {
-          case('/'):
-              // $('#overAllTopLeft').css({'top': '100vh', 'left': '0vw'});
-              // $('#overAllTopRight').css({'top': '-100vh', 'left': '50vw'});
-              // $('#overAllBottomLeft').css({'top': '150vh', 'left': '0vw'});
-              // $('#overAllBottomRight').css({'top': '-50vh', 'left': '50vw'});
-          case('/season'):
-              $('#overAllTopLeft').css({'top': '0vh', 'left': '100vw'});
-              $('#overAllTopRight').css({'top': '0vh', 'left': '150vw'});
-              $('#overAllBottomLeft').css({'top': '50vh', 'left': '-150vw'});
-              $('#overAllBottomRight').css({'top': '50vh', 'left': '-100vw'});
-              break;
-      }
-      // $('#overAllTopLeft').css({'top': '-100vh', 'left': '0vw'});
-      // $('#overAllTopRight').css({'top': '-100vh', 'left': '50vw'});
-      // $('#overAllBottomLeft').css({'top': '-50vh', 'left': '0vw'});
-      // $('#overAllBottomRight').css({'top': '-50vh', 'left': '50vw'}); 
-  }
-
   render() {
     return (
       <div className="App">
         {router}
-        <div id="overAllTopLeft" className="overAll"></div>
-        <div id="overAllTopRight" className="overAll"></div>
-        <div id="overAllBottomLeft" className="overAll"></div>
-        <div id="overAllBottomRight" className="overAll"></div>
+        <div id="overAllTopLeft" className="overAll"><img src={ballerina} alt="ballerina"/></div>
+        <div id="overAllTopRight" className="overAll"><img src={ballerina} alt="ballerina"/></div>
+        <div id="overAllBottomLeft" className="overAll"><img src={ballerina} alt="ballerina"/></div>
+        <div id="overAllBottomRight" className="overAll"><img src={ballerina} alt="ballerina"/></div>
         <Nav coverPage={this.cover} unCoverPage={this.unCover}/>  
       </div>
     );
