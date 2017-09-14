@@ -65,16 +65,16 @@ class App extends Component {
             TweenMax.to($('#overAllBottomRight'), 1.2, { top: '150vh', delay: '1.35', ease: TweenMax.Power1.easeIn }); 
             break;
         case('/support'):
-            TweenMax.to($('#overAllTopLeft'), 1.2, { left: '-100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllTopRight'), 1.2, { left: '-50vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllBottomRight'), 1.2, { left: '150vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllTopLeft'), 1.2, { left: '-100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllTopRight'), 1.2, { left: '-50vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllBottomRight'), 1.2, { left: '150vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
             break;
         case('/season'):
-            TweenMax.to($('#overAllTopLeft'), 1.2, { left: '100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllTopRight'), 1.2, { left: '150vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '-100vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
-            TweenMax.to($('#overAllBottomRight'), 1.2, { left: '-50vw', delay: '1.35', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllTopLeft'), 1.2, { left: '100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllTopRight'), 1.2, { left: '150vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllBottomLeft'), 1.2, { left: '-100vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
+            TweenMax.to($('#overAllBottomRight'), 1.2, { left: '-50vw', delay: '1.75', ease: TweenMax.Power1.easeIn });
             break;
         case('/'):
             TweenMax.to($('#overAllTopLeft'), 1.2, { top: '100vh', delay: '1.35', ease: TweenMax.Power1.easeIn });

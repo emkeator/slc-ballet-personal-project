@@ -230,7 +230,8 @@ table {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .ticketsPage {
   background-color: rgba(0, 0, 0, 0.8);
@@ -582,7 +583,8 @@ table {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 @media (min-width: 700px) {
   .supportPage .supportPageContainer {
@@ -629,7 +631,8 @@ table {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .aboutPageBallet {
   width: 300px;
@@ -899,12 +902,16 @@ table {
     left: -150px; }
 
 .mobileHeader {
-  width: 100vw;
-  display: block; }
+  width: calc(100vw + 6px);
+  display: block;
+  position: absolute;
+  left: -3px; }
 
 .fullscreenHeader {
-  width: 100vw;
-  display: none; }
+  width: calc(100vw + 6px);
+  display: none;
+  position: relative;
+  left: -3px; }
 
 @media (min-width: 650px) {
   .mobileHeader {

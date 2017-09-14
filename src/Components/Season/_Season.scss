@@ -90,12 +90,6 @@
 }
 
 .tickets {
-    // border: {
-    //     left:20px solid $black-opaque-2;
-    //     right:20px solid $black-opaque-2;
-    //     bottom: none;
-    //     top: none        
-    // }
     padding: 0 20px;
 }
 
@@ -105,13 +99,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
-@media(min-width: 600px) {
-    .seasonPage {
-        .seasonPageContainer {
-            // width: 50vw;
-        }
-    }
-}
+// @media(min-width: 600px) {
+//     .seasonPage {
+//         .seasonPageContainer {
+//             // width: 50vw;
+//         }
+//     }
+// }
 

@@ -20,19 +20,6 @@
 @include season-page-bg-image();
 @include support-page-bg-image();
 
-
-// #overAll {
-//     width: 300vw;
-//     height: 300vh;
-//     // border-radius: 50%;
-//     position: fixed;
-//     top: -150vh;
-//     // right: -150vw;
-//     background-color: black;
-//     opacity: 1;
-//     z-index: 5;
-// }
-
 .overAll {
     position: fixed;
     background-color: black;
@@ -98,13 +85,17 @@
 }
 
 .mobileHeader {
-    width: 100vw;
+    width: calc(100vw + 6px);
     display: block;
+    position: absolute;
+    left: -3px;
 }
 
 .fullscreenHeader {
-    width: 100vw;
+    width: calc(100vw + 6px);
     display: none;
+    position: relative;
+    left: -3px;
 }
 
 @media (min-width: 650px) {
